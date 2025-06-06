@@ -1,15 +1,18 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
+from werkzeug.security import generate_password_hash
 import os
-from dotenv import load_dotenv
+
+# Carga .env solo en desarrollo
+if os.environ.get("FLASK_ENV") != "production":
+    from dotenv import load_dotenv
+    load_dotenv()
 
 db = SQLAlchemy()
 login_manager = LoginManager()
 
 def create_app():
-    load_dotenv()  # Carga variables del .env
-    
     app = Flask(__name__)
     app.config.from_object('config.Config')
 
@@ -25,12 +28,17 @@ def create_app():
 
     with app.app_context():
         from .models import User
-        from werkzeug.security import generate_password_hash
 
+        # Leer variables de entorno
         username = os.getenv('ADMIN_USER')
         password = os.getenv('ADMIN_PASS')
         role = os.getenv('ADMIN_ROLE')
 
+        # Validar que existan
+        if not all([username, password, role]):
+            raise ValueError("❌ Faltan ADMIN_USER, ADMIN_PASS o ADMIN_ROLE en las variables de entorno")
+
+        # Crear admin si no existe
         admin = User.query.filter_by(username=username).first()
         if not admin:
             admin = User(
@@ -40,9 +48,9 @@ def create_app():
             )
             db.session.add(admin)
             db.session.commit()
-            print(f"✔ Usuario {username} creado")
+            print(f"✔ Usuario administrador '{username}' creado")
         else:
-            print(f"ℹ Usuario {username} ya existe")
+            print(f"ℹ Usuario '{username}' ya existe")
 
     return app
 
