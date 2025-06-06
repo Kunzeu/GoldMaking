@@ -1,0 +1,22 @@
+# Entorno virtual
+venv/
+
+# Archivos de Python compilados
+__pycache__/
+*.pyc
+
+# Archivos de configuración y entorno
+.env
+config.py
+
+# Archivos de base de datos y datos temporales
+*.db
+*.sqlite3
+
+# Scripts de administración y pruebas
+create_admin.py
+init_db.py
+insert_test_data.py
+
+# Otros
+instance/

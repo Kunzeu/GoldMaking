@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Gold Making - Inicio</title>
+    <link href="{{ url_for('static', filename='tailwind.css') }}" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+    <nav>
+        <a href="{{ url_for('main.index') }}">Inicio</a>
+        {% if current_user.is_authenticated and current_user.role == 'admin' %}
+            <a href="{{ url_for('main.admin_panel') }}">Panel Administrativo</a>
+            <a href="{{ url_for('main.users_panel') }}">Usuarios</a>
+        {% endif %}
+        {% if current_user.is_authenticated and current_user.role in ['admin', 'editor'] %}
+            <a href="{{ url_for('main.add_farm') }}">Añadir Farmeo</a>
+        {% endif %}
+        {% if current_user.is_authenticated %}
+            <a href="{{ url_for('auth.logout') }}">Cerrar sesión</a>
+        {% else %}
+            <a href="{{ url_for('auth.login') }}">Iniciar sesión</a>
+        {% endif %}
+    </nav>
+
+    <h1 class="text-2xl font-bold mb-4">Gold Making - Lista de Farmeos</h1>
+
+    {% if farmeos %}
+        <table class="min-w-full bg-white rounded shadow">
+            <thead>
+                <tr class="bg-gray-200 text-left">
+                    <th class="px-4 py-2">Nombre</th>
+                    <th class="px-4 py-2">Veces Realizadas</th>
+                    <th class="px-4 py-2">Ganancia Estimada</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for farm in farmeos %}
+                <tr class="border-t">
+                    <td class="px-4 py-2">{{ farm.nombre }}</td>
+                    <td class="px-4 py-2">{{ farm.veces_realizadas }}</td>
+                    <td class="px-4 py-2">{{ farm.ganancia_formateada }} 🪙</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No hay farmeos registrados.</p>
+    {% endif %}
+</body>
+</html>

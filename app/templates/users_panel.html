@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Usuarios - Panel Admin</title>
+    <link href="{{ url_for('static', filename='tailwind.css') }}" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+    <h1 class="text-xl font-bold mb-4">Gestión de Usuarios</h1>
+    <a href="{{ url_for('main.admin_panel') }}" class="text-blue-600 hover:underline mb-4 inline-block">Volver al panel</a>
+    <table class="min-w-full bg-white rounded shadow">
+        <thead>
+            <tr class="bg-gray-200 text-left">
+                <th class="px-4 py-2">ID</th>
+                <th class="px-4 py-2">Usuario</th>
+                <th class="px-4 py-2">Rol</th>
+                <th class="px-4 py-2">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr class="border-t">
+                <td class="px-4 py-2">{{ user.id }}</td>
+                <td class="px-4 py-2">{{ user.username }}</td>
+                <td class="px-4 py-2">{{ user.role|capitalize }}</td>
+                <td class="px-4 py-2">
+                    {% if current_user.is_authenticated and current_user.role == 'admin' %}
+                        <a href="{{ url_for('main.edit_user', user_id=user.id) }}" class="text-green-600 hover:underline mr-2">Editar</a>
+                        <form action="{{ url_for('main.delete_user', user_id=user.id) }}" method="post" style="display:inline;" onsubmit="return confirm('¿Seguro que deseas eliminar este usuario?');">
+                            <button type="submit" class="text-red-600 hover:underline">Eliminar</button>
+                        </form>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="mt-4 text-red-600">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</body>
+</html> 

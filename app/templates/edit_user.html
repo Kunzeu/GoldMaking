@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Editar Usuario</title>
+    <link href="{{ url_for('static', filename='tailwind.css') }}" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+    <h1 class="text-xl font-bold mb-4">Editar usuario</h1>
+    <form method="post" class="bg-white p-4 rounded shadow max-w-sm">
+        <label>Usuario:
+            <input type="text" name="username" value="{{ user.username }}" class="border p-2 w-full mb-2" required>
+        </label>
+        <label>Nueva contraseña (opcional):
+            <input type="password" name="password" class="border p-2 w-full mb-2">
+        </label>
+        <label>Rol:
+          <select name="role" class="border p-2 w-full mb-2">
+              <option value="user" {% if user.role == 'user' %}selected{% endif %}>Usuario</option>
+              <option value="editor" {% if user.role == 'editor' %}selected{% endif %}>Editor</option>
+              <option value="admin" {% if user.role == 'admin' %}selected{% endif %}>Administrador</option>
+          </select>
+      </label>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Guardar cambios</button>
+    </form>
+    <a href="{{ url_for('main.users_panel') }}" class="text-blue-600 hover:underline mt-4 inline-block">Volver a usuarios</a>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="mt-4 text-red-600">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</body>
+</html> 

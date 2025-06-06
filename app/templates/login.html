@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Iniciar sesión</title>
+    <link href="{{ url_for('static', filename='tailwind.css') }}" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+    <h1 class="text-xl font-bold mb-4">Iniciar sesión</h1>
+    <form method="post" class="bg-white p-4 rounded shadow max-w-sm">
+        <label>Usuario: <input type="text" name="username" class="border p-2 w-full mb-2" required></label>
+        <label>Contraseña: <input type="password" name="password" class="border p-2 w-full mb-2" required></label>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Entrar</button>
+    </form>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="mt-4 text-red-600">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</body>
+</html>

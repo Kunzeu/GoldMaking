@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Administrativo - Gold Making</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+    <div class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-md rounded-lg">
+        <h1 class="text-2xl font-bold mb-4">Panel Administrativo</h1>
+
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <ul>
+              {% for message in messages %}
+                <li class="text-green-600 mb-2">{{ message }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+
+        {% if current_user.is_authenticated and current_user.role in ['admin', 'editor'] %}
+          <a href="{{ url_for('main.add_farm') }}" 
+             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-6 inline-block">
+            + Añadir Farmeo
+          </a>
+        {% endif %}
+
+        {% if farmeos %}
+          <table class="table-auto w-full border-collapse text-left">
+            <thead>
+              <tr class="bg-gray-200">
+                <th class="px-4 py-2">Nombre</th>
+                <th class="px-4 py-2">Veces Realizadas</th>
+                <th class="px-4 py-2">Ganancia 🪙</th>
+                <th class="px-4 py-2">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for farm in farmeos %}
+                <tr class="border-t">
+                  <td class="px-4 py-2">{{ farm.nombre }}</td>
+                  <td class="px-4 py-2">{{ farm.veces_realizadas }}</td>
+                  <td class="px-4 py-2">{{ farm.ganancia_formateada }}</td>
+                  <td class="px-4 py-2 space-x-4">
+                    {% if current_user.is_authenticated %}
+                      <a href="{{ url_for('main.edit_farm', farm_id=farm.id) }}" 
+                         class="text-blue-600 hover:underline">Editar</a>
+                      <form action="{{ url_for('main.delete_farm', farm_id=farm.id) }}" method="post" class="inline">
+                        <button type="submit" class="text-red-600 hover:underline" onclick="return confirm('¿Seguro que deseas eliminar este farmeo?');">Eliminar</button>
+                      </form>
+                    {% endif %}
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {% else %}
+          <p>No hay farmeos registrados.</p>
+        {% endif %}
+
+        {% if current_user.is_authenticated and current_user.role == 'admin' %}
+          <p class="text-green-700 mt-4">Eres administrador, tienes acceso total.</p>
+        {% elif current_user.is_authenticated and current_user.role == 'editor' %}
+          <p class="text-blue-700 mt-4">Eres editor, puedes gestionar farmeos.</p>
+        {% elif current_user.is_authenticated %}
+          <p class="text-blue-700 mt-4">Eres usuario básico, puedes gestionar farmeos.</p>
+        {% else %}
+          <p class="text-red-700 mt-4">Debes iniciar sesión para gestionar farmeos.</p>
+        {% endif %}
+
+    </div>
+
+</body>
+</html>
