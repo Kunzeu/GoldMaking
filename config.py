@@ -5,6 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 class Config:
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
+    SQLALCHEMY_DATABASE_URI = "postgresql://root:JGWaC0WrJwJSI9gnax2V0cVD4z8ajtWp@dpg-d11lj8c9c44c73ffb9cg-a.singapore-postgres.render.com/goldmaking"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SECRET_KEY = "tu_clave_secreta_aqui"
+    SECRET_KEY = "una_clave_secreta_que_puedas_cambiar"
+
