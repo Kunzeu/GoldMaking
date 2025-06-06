@@ -7,8 +7,6 @@ __pycache__/
 
 # Archivos de configuración y entorno
 .env
-config.py
-
 # Archivos de base de datos y datos temporales
 *.db
 *.sqlite3
