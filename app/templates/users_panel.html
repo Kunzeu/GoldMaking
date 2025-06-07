@@ -6,43 +6,59 @@
     <link href="{{ url_for('static', filename='tailwind.css') }}" rel="stylesheet">
 </head>
 <body class="bg-gray-100 p-6">
-    <h1 class="text-xl font-bold mb-4">Gestión de Usuarios</h1>
-    <a href="{{ url_for('main.admin_panel') }}" class="text-blue-600 hover:underline mb-4 inline-block">Volver al panel</a>
-    <table class="min-w-full bg-white rounded shadow">
-        <thead>
-            <tr class="bg-gray-200 text-left">
-                <th class="px-4 py-2">ID</th>
-                <th class="px-4 py-2">Usuario</th>
-                <th class="px-4 py-2">Rol</th>
-                <th class="px-4 py-2">Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for user in users %}
-            <tr class="border-t">
-                <td class="px-4 py-2">{{ user.id }}</td>
-                <td class="px-4 py-2">{{ user.username }}</td>
-                <td class="px-4 py-2">{{ user.role|capitalize }}</td>
-                <td class="px-4 py-2">
-                    {% if current_user.is_authenticated and current_user.role == 'admin' %}
+    <!-- Menú de navegación mejorado -->
+    <nav class="bg-white shadow-md rounded-lg px-6 py-3 flex flex-wrap items-center justify-between mb-8">
+        <div class="flex items-center space-x-4">
+            <span class="text-2xl font-bold text-yellow-600">🪙 Gold Making</span>
+            <a href="{{ url_for('main.index') }}" class="text-gray-700 hover:text-yellow-600 font-semibold transition">Inicio</a>
+            <a href="{{ url_for('main.admin_panel') }}" class="text-gray-700 hover:text-yellow-600 font-semibold transition">Panel Admin</a>
+            <a href="{{ url_for('main.users_panel') }}" class="text-gray-700 hover:text-yellow-600 font-semibold transition">Usuarios</a>
+        </div>
+        <div>
+            <a href="{{ url_for('auth.logout') }}" class="text-red-500 hover:text-red-700 font-semibold transition">Cerrar sesión</a>
+        </div>
+    </nav>
+    <!-- Fin menú -->
+    <div class="max-w-4xl mx-auto bg-white rounded shadow p-6">
+        <div class="mb-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">Gestión de Usuarios</h1>
+            <a href="{{ url_for('main.admin_panel') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 font-semibold transition">← Volver al panel</a>
+        </div>
+        <a href="{{ url_for('main.create_user') }}" class="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600 font-semibold transition mb-4 inline-block">+ Crear usuario</a>
+        <table class="min-w-full bg-white rounded shadow">
+            <thead>
+                <tr class="bg-gray-200 text-left">
+                    <th class="px-4 py-2">ID</th>
+                    <th class="px-4 py-2">Usuario</th>
+                    <th class="px-4 py-2">Rol</th>
+                    <th class="px-4 py-2">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr class="border-t">
+                    <td class="px-4 py-2">{{ user.id }}</td>
+                    <td class="px-4 py-2">{{ user.username }}</td>
+                    <td class="px-4 py-2">{{ user.role|capitalize }}</td>
+                    <td class="px-4 py-2">
                         <a href="{{ url_for('main.edit_user', user_id=user.id) }}" class="text-green-600 hover:underline mr-2">Editar</a>
                         <form action="{{ url_for('main.delete_user', user_id=user.id) }}" method="post" style="display:inline;" onsubmit="return confirm('¿Seguro que deseas eliminar este usuario?');">
                             <button type="submit" class="text-red-600 hover:underline">Eliminar</button>
                         </form>
-                    {% endif %}
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    {% with messages = get_flashed_messages() %}
-      {% if messages %}
-        <ul class="mt-4 text-red-600">
-          {% for message in messages %}
-            <li>{{ message }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    {% endwith %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <ul class="mt-4 text-red-600">
+              {% for message in messages %}
+                <li>{{ message }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+    </div>
 </body>
 </html> 

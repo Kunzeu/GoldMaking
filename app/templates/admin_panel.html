@@ -6,10 +6,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-900 font-sans">
-
+    <!-- Menú de navegación mejorado -->
+    <nav class="bg-white shadow-md rounded-lg px-6 py-3 flex flex-wrap items-center justify-between mb-8">
+        <div class="flex items-center space-x-4">
+            <span class="text-2xl font-bold text-yellow-600">🪙 Gold Making</span>
+            <a href="{{ url_for('main.index') }}" class="text-gray-700 hover:text-yellow-600 font-semibold transition">Inicio</a>
+            <a href="{{ url_for('main.admin_panel') }}" class="text-gray-700 hover:text-yellow-600 font-semibold transition">Panel Admin</a>
+            <a href="{{ url_for('main.users_panel') }}" class="text-gray-700 hover:text-yellow-600 font-semibold transition">Usuarios</a>
+            <a href="{{ url_for('main.add_farm') }}" class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 font-semibold transition">+ Añadir Farmeo</a>
+        </div>
+        <div>
+            <a href="{{ url_for('auth.logout') }}" class="text-red-500 hover:text-red-700 font-semibold transition">Cerrar sesión</a>
+        </div>
+    </nav>
+    <!-- Fin menú -->
     <div class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-md rounded-lg">
-        <h1 class="text-2xl font-bold mb-4">Panel Administrativo</h1>
-
+        <div class="mb-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Panel Administrativo</h1>
+            <a href="{{ url_for('main.index') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 font-semibold transition">← Volver al inicio</a>
+        </div>
         {% with messages = get_flashed_messages() %}
           {% if messages %}
             <ul>
@@ -19,14 +34,6 @@
             </ul>
           {% endif %}
         {% endwith %}
-
-        {% if current_user.is_authenticated and current_user.role in ['admin', 'editor'] %}
-          <a href="{{ url_for('main.add_farm') }}" 
-             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-6 inline-block">
-            + Añadir Farmeo
-          </a>
-        {% endif %}
-
         {% if farmeos %}
           <table class="table-auto w-full border-collapse text-left">
             <thead>
@@ -44,13 +51,10 @@
                   <td class="px-4 py-2">{{ farm.veces_realizadas }}</td>
                   <td class="px-4 py-2">{{ farm.ganancia_formateada }}</td>
                   <td class="px-4 py-2 space-x-4">
-                    {% if current_user.is_authenticated %}
-                      <a href="{{ url_for('main.edit_farm', farm_id=farm.id) }}" 
-                         class="text-blue-600 hover:underline">Editar</a>
-                      <form action="{{ url_for('main.delete_farm', farm_id=farm.id) }}" method="post" class="inline">
+                    <a href="{{ url_for('main.edit_farm', farm_id=farm.id) }}" class="text-blue-600 hover:underline">Editar</a>
+                    <form action="{{ url_for('main.delete_farm', farm_id=farm.id) }}" method="post" class="inline">
                         <button type="submit" class="text-red-600 hover:underline" onclick="return confirm('¿Seguro que deseas eliminar este farmeo?');">Eliminar</button>
-                      </form>
-                    {% endif %}
+                    </form>
                   </td>
                 </tr>
               {% endfor %}
@@ -59,18 +63,6 @@
         {% else %}
           <p>No hay farmeos registrados.</p>
         {% endif %}
-
-        {% if current_user.is_authenticated and current_user.role == 'admin' %}
-          <p class="text-green-700 mt-4">Eres administrador, tienes acceso total.</p>
-        {% elif current_user.is_authenticated and current_user.role == 'editor' %}
-          <p class="text-blue-700 mt-4">Eres editor, puedes gestionar farmeos.</p>
-        {% elif current_user.is_authenticated %}
-          <p class="text-blue-700 mt-4">Eres usuario básico, puedes gestionar farmeos.</p>
-        {% else %}
-          <p class="text-red-700 mt-4">Debes iniciar sesión para gestionar farmeos.</p>
-        {% endif %}
-
     </div>
-
 </body>
 </html>
