@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Gold Making - Inicio</title>
-    <link href="{{ url_for('static', filename='tailwind.css') }}" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 p-6">
     <!-- Menú de navegación mejorado -->
@@ -14,6 +14,7 @@
             {% if current_user.is_authenticated and current_user.role == 'admin' %}
                 <a href="{{ url_for('main.admin_panel') }}" class="text-gray-700 hover:text-yellow-600 font-semibold transition">Panel Admin</a>
                 <a href="{{ url_for('main.users_panel') }}" class="text-gray-700 hover:text-yellow-600 font-semibold transition">Usuarios</a>
+                <a href="{{ url_for('main.create_user') }}" class="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600 font-semibold transition">+ Crear usuario</a>
             {% endif %}
             {% if current_user.is_authenticated and current_user.role in ['admin', 'editor'] %}
                 <a href="{{ url_for('main.add_farm') }}" class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 font-semibold transition">+ Añadir Farmeo</a>

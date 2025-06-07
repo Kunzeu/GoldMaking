@@ -3,35 +3,53 @@
 <head>
     <meta charset="UTF-8" />
     <title>Editar Usuario</title>
-    <link href="{{ url_for('static', filename='tailwind.css') }}" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 p-6">
-    <h1 class="text-xl font-bold mb-4">Editar usuario</h1>
-    <form method="post" class="bg-white p-4 rounded shadow max-w-sm">
-        <label>Usuario:
-            <input type="text" name="username" value="{{ user.username }}" class="border p-2 w-full mb-2" required>
-        </label>
-        <label>Nueva contraseña (opcional):
-            <input type="password" name="password" class="border p-2 w-full mb-2">
-        </label>
-        <label>Rol:
-          <select name="role" class="border p-2 w-full mb-2">
-              <option value="user" {% if user.role == 'user' %}selected{% endif %}>Usuario</option>
-              <option value="editor" {% if user.role == 'editor' %}selected{% endif %}>Editor</option>
-              <option value="admin" {% if user.role == 'admin' %}selected{% endif %}>Administrador</option>
-          </select>
-      </label>
-        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Guardar cambios</button>
-    </form>
-    <a href="{{ url_for('main.users_panel') }}" class="text-blue-600 hover:underline mt-4 inline-block">Volver a usuarios</a>
-    {% with messages = get_flashed_messages() %}
-      {% if messages %}
-        <ul class="mt-4 text-red-600">
-          {% for message in messages %}
-            <li>{{ message }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    {% endwith %}
+    <!-- Menú de navegación mejorado -->
+    <nav class="bg-white shadow-md rounded-lg px-6 py-3 flex flex-wrap items-center justify-between mb-8">
+        <div class="flex items-center space-x-4">
+            <span class="text-2xl font-bold text-yellow-600">🪙 Gold Making</span>
+            <a href="{{ url_for('main.index') }}" class="text-gray-700 hover:text-yellow-600 font-semibold transition">Inicio</a>
+            <a href="{{ url_for('main.admin_panel') }}" class="text-gray-700 hover:text-yellow-600 font-semibold transition">Panel Admin</a>
+            <a href="{{ url_for('main.users_panel') }}" class="text-gray-700 hover:text-yellow-600 font-semibold transition">Usuarios</a>
+        </div>
+        <div>
+            <a href="{{ url_for('auth.logout') }}" class="text-red-500 hover:text-red-700 font-semibold transition">Cerrar sesión</a>
+        </div>
+    </nav>
+    <!-- Fin menú -->
+    <div class="max-w-sm mx-auto bg-white p-4 rounded shadow">
+        <div class="mb-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">Editar usuario</h1>
+            <a href="{{ url_for('main.users_panel') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 font-semibold transition">← Volver a usuarios</a>
+        </div>
+        <form method="post">
+            <label>Usuario:
+                <input type="text" name="username" value="{{ user.username }}" class="border p-2 w-full mb-2" required>
+            </label>
+            <label>Nueva contraseña (opcional):
+                <input type="password" name="password" class="border p-2 w-full mb-2">
+            </label>
+            <label>Rol:
+              <select name="role" class="border p-2 w-full mb-2">
+                  <option value="user" {% if user.role == 'user' %}selected{% endif %}>Usuario</option>
+                  <option value="editor" {% if user.role == 'editor' %}selected{% endif %}>Editor</option>
+                  <option value="admin" {% if user.role == 'admin' %}selected{% endif %}>Administrador</option>
+              </select>
+          </label>
+            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Guardar cambios</button>
+        </form>
+        <a href="{{ url_for('main.users_panel') }}" class="text-blue-600 hover:underline mt-4 inline-block">Volver a usuarios</a>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <ul class="mt-4 text-red-600">
+              {% for message in messages %}
+                <li>{{ message }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+    </div>
 </body>
 </html> 
