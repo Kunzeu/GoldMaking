@@ -12,7 +12,7 @@ class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(100), unique=True, nullable=False)
     password_hash = db.Column(db.String(200), nullable=False)
-    role = db.Column(db.String(20), default='user')  # 'admin', 'editor', 'user'
+    role = db.Column(db.String(20), default='admin')  # 'admin', 'editor', 'user'
 
     # Propiedad para password: se evita acceso directo y se usa para setear hash
     @property
