@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify
+from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify, make_response
 from . import db
 from .models import Farm, User
 from flask_login import login_required, current_user
@@ -224,10 +224,10 @@ def add_farm():
                 limitation=limitation,
                 datasets=datasets
             )
-            db.session.add(nuevo_farm)
-            db.session.commit()
-            flash("Farmeo agregado correctamente.")
-            return redirect(url_for('main.admin_panel'))
+        db.session.add(nuevo_farm)
+        db.session.commit()
+        flash("Farmeo agregado correctamente.")
+        return redirect(url_for('main.admin_panel'))
         # Si hay errores, no guardar y mostrar en el formulario
     return render_template('add_farm.html', errors=errors)
 
@@ -408,3 +408,25 @@ def register():
             for e in errors:
                 flash(e, 'error')
     return render_template('register.html')
+
+@main_bp.app_errorhandler(404)
+def not_found(e):
+    return render_template('404.html'), 404
+
+@main_bp.app_errorhandler(500)
+def server_error(e):
+    return render_template('500.html'), 500
+
+@main_bp.route('/farmeo/<int:farm_id>')
+def farmeo_detail(farm_id):
+    farm = Farm.query.get_or_404(farm_id)
+    return render_template('farmeo_detail.html', farm=farm)
+
+@main_bp.route('/robots.txt')
+def robots_txt():
+    lines = [
+        'User-agent: *',
+        'Disallow:',
+        'Sitemap: ' + url_for('sitemap', _external=True)
+    ]
+    return '\n'.join(lines), 200, {'Content-Type': 'text/plain'}
