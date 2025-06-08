@@ -3,6 +3,7 @@ from . import db
 from .models import Farm, User
 from flask_login import login_required, current_user
 from werkzeug.security import check_password_hash
+import re
 
 main_bp = Blueprint('main', __name__)
 
@@ -25,12 +26,79 @@ def gsc_to_float(g, s, c):
 
 @main_bp.route('/')
 def index():
-    q = request.args.get('q', '').strip()
-    if q:
-        # Filtrado insensible a mayúsculas/minúsculas y coincidencia parcial
-        farmeos = Farm.query.filter(Farm.nombre.ilike(f"%{q}%")).all()
-    else:
-        farmeos = Farm.query.all()
+    # Filtros para la vista pública
+    query = Farm.query
+    filtro_nombre = request.args.get('nombre', '').strip()
+    if filtro_nombre:
+        query = query.filter(Farm.nombre.ilike(f"%{filtro_nombre}%"))
+    filtro_veces = request.args.get('veces_realizadas', '').strip()
+    if filtro_veces:
+        try:
+            filtro_veces = int(filtro_veces)
+            query = query.filter(Farm.veces_realizadas == filtro_veces)
+        except ValueError:
+            pass
+    ganancia_min = request.args.get('ganancia_min', '').strip()
+    if ganancia_min:
+        try:
+            ganancia_min = float(ganancia_min)
+            query = query.filter(Farm.ganancia >= ganancia_min)
+        except ValueError:
+            pass
+    ganancia_max = request.args.get('ganancia_max', '').strip()
+    if ganancia_max:
+        try:
+            ganancia_max = float(ganancia_max)
+            query = query.filter(Farm.ganancia <= ganancia_max)
+        except ValueError:
+            pass
+    filtro_waypoint = request.args.get('waypoint', '').strip()
+    if filtro_waypoint:
+        query = query.filter(Farm.waypoint.ilike(f"%{filtro_waypoint}%"))
+    filtro_duracion = request.args.get('duracion', '').strip()
+    if filtro_duracion:
+        query = query.filter(Farm.duracion == filtro_duracion)
+    filtro_requerimientos = request.args.get('requerimientos', '').strip()
+    if filtro_requerimientos:
+        query = query.filter(Farm.requerimientos.ilike(f"%{filtro_requerimientos}%"))
+    profit_hr_min = request.args.get('profit_hr_min', '').strip()
+    if profit_hr_min:
+        try:
+            profit_hr_min = float(profit_hr_min)
+            query = query.filter(Farm.profit_hr >= profit_hr_min)
+        except ValueError:
+            pass
+    profit_hr_max = request.args.get('profit_hr_max', '').strip()
+    if profit_hr_max:
+        try:
+            profit_hr_max = float(profit_hr_max)
+            query = query.filter(Farm.profit_hr <= profit_hr_max)
+        except ValueError:
+            pass
+    filtro_limitation = request.args.get('limitation', '').strip()
+    if filtro_limitation:
+        query = query.filter(Farm.limitation.ilike(f"%{filtro_limitation}%"))
+    sort = request.args.get('sort', '')
+    sort_map = {
+        'nombre': Farm.nombre,
+        'veces_realizadas': Farm.veces_realizadas,
+        'ganancia': Farm.ganancia,
+        'waypoint': Farm.waypoint,
+        'duracion': Farm.duracion,
+        'requerimientos': Farm.requerimientos,
+        'profit_hr': Farm.profit_hr,
+        'limitation': Farm.limitation
+    }
+    if sort:
+        for key in sort_map:
+            if sort.startswith(key):
+                direction = sort.split('_')[1] if '_' in sort else 'asc'
+                if direction == 'desc':
+                    query = query.order_by(sort_map[key].desc())
+                else:
+                    query = query.order_by(sort_map[key].asc())
+                break
+    farmeos = query.all()
     farmeos_formateados = []
     total_farmeos = len(farmeos)
     suma_ganancias = sum(f.ganancia for f in farmeos)
@@ -42,9 +110,8 @@ def index():
             "waypoint": farm.waypoint,
             "duracion": farm.duracion,
             "requerimientos": farm.requerimientos,
-            "profit_hr": farm.profit_hr,
-            "limitation": farm.limitation,
-            "datasets": farm.datasets
+            "profit_hr_formateado": format_gsc(farm.profit_hr) if farm.profit_hr is not None else '-',
+            "limitation": farm.limitation
         })
     return render_template('index.html', farmeos=farmeos_formateados, total_farmeos=total_farmeos, suma_ganancias=suma_ganancias)
 
@@ -54,9 +121,31 @@ def admin_panel():
     if current_user.role != 'admin':
         flash("No tienes permisos para acceder a esta sección.")
         return redirect(url_for('main.index'))
+    # Filtros
+    query = Farm.query
+    filtro_nombre = request.args.get('nombre', '').strip()
+    if filtro_nombre:
+        query = query.filter(Farm.nombre.ilike(f"%{filtro_nombre}%"))
+    filtro_duracion = request.args.get('duracion', '').strip()
+    if filtro_duracion:
+        query = query.filter(Farm.duracion == filtro_duracion)
+    ganancia_min = request.args.get('ganancia_min', '').strip()
+    if ganancia_min:
+        try:
+            ganancia_min = float(ganancia_min)
+            query = query.filter(Farm.ganancia >= ganancia_min)
+        except ValueError:
+            pass
+    ganancia_max = request.args.get('ganancia_max', '').strip()
+    if ganancia_max:
+        try:
+            ganancia_max = float(ganancia_max)
+            query = query.filter(Farm.ganancia <= ganancia_max)
+        except ValueError:
+            pass
     page = request.args.get('page', 1, type=int)
     per_page = 10
-    pagination = Farm.query.order_by(Farm.id.desc()).paginate(page=page, per_page=per_page, error_out=False)
+    pagination = query.order_by(Farm.id.desc()).paginate(page=page, per_page=per_page, error_out=False)
     farmeos = pagination.items
     farmeos_formateados = []
     for farm in farmeos:
@@ -69,9 +158,8 @@ def admin_panel():
             "waypoint": farm.waypoint,
             "duracion": farm.duracion,
             "requerimientos": farm.requerimientos,
-            "profit_hr": farm.profit_hr,
-            "limitation": farm.limitation,
-            "datasets": farm.datasets
+            "profit_hr_formateado": format_gsc(farm.profit_hr) if farm.profit_hr is not None else '-',
+            "limitation": farm.limitation
         })
     return render_template('admin_panel.html', farmeos=farmeos_formateados, pagination=pagination)
 
@@ -90,8 +178,13 @@ def add_farm():
         c = request.form.get('copper', 0)
         waypoint = request.form.get('waypoint', '').strip()
         duracion = request.form.get('duracion', '').strip()
+        # Validación de duración formato hh:mm:ss
+        if duracion and not re.match(r'^([0-1]?[0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]$', duracion):
+            errors.append('La duración debe tener formato hh:mm:ss (ejemplo: 01:30:00)')
         requerimientos = request.form.get('requerimientos', '').strip()
-        profit_hr = request.form.get('profit_hr', None)
+        profit_hr_g = request.form.get('profit_hr_gold', 0)
+        profit_hr_s = request.form.get('profit_hr_silver', 0)
+        profit_hr_c = request.form.get('profit_hr_copper', 0)
         limitation = request.form.get('limitation', '').strip()
         datasets = request.form.get('datasets', '').strip()
         # Validaciones
@@ -104,7 +197,10 @@ def add_farm():
             g = int(g)
             s = int(s)
             c = int(c)
-            profit_hr = float(profit_hr) if profit_hr not in (None, '') else None
+            profit_hr_g = int(profit_hr_g)
+            profit_hr_s = int(profit_hr_s)
+            profit_hr_c = int(profit_hr_c)
+            profit_hr = gsc_to_float(profit_hr_g, profit_hr_s, profit_hr_c)
         except ValueError:
             errors.append('Los valores numéricos deben ser números enteros.')
         else:
@@ -148,9 +244,11 @@ def edit_farm(farm_id):
         farm.waypoint = request.form.get('waypoint', '').strip()
         farm.duracion = request.form.get('duracion', '').strip()
         farm.requerimientos = request.form.get('requerimientos', '').strip()
-        profit_hr = request.form.get('profit_hr', None)
+        profit_hr_g = request.form.get('profit_hr_gold', 0)
+        profit_hr_s = request.form.get('profit_hr_silver', 0)
+        profit_hr_c = request.form.get('profit_hr_copper', 0)
         try:
-            farm.profit_hr = float(profit_hr) if profit_hr not in (None, '') else None
+            farm.profit_hr = gsc_to_float(int(profit_hr_g), int(profit_hr_s), int(profit_hr_c))
         except ValueError:
             farm.profit_hr = None
         farm.limitation = request.form.get('limitation', '').strip()
@@ -165,6 +263,15 @@ def edit_farm(farm_id):
     resto = total_cobre % 10000
     farm.silver = resto // 100
     farm.copper = resto % 100
+    # Para mostrar los valores en el formulario, extraemos G/S/C de profit_hr
+    if farm.profit_hr is not None:
+        total_cobre_hr = int(round(farm.profit_hr * 10000))
+        farm.profit_hr_gold = total_cobre_hr // 10000
+        resto_hr = total_cobre_hr % 10000
+        farm.profit_hr_silver = resto_hr // 100
+        farm.profit_hr_copper = resto_hr % 100
+    else:
+        farm.profit_hr_gold = farm.profit_hr_silver = farm.profit_hr_copper = ''
 
     return render_template('edit_farm.html', farm=farm)
 
@@ -277,3 +384,27 @@ def update_veces_farm(farm_id):
     farm.veces_realizadas = veces
     db.session.commit()
     return jsonify({'success': True, 'veces_realizadas': farm.veces_realizadas})
+
+@main_bp.route('/register', methods=['GET', 'POST'])
+def register():
+    errors = []
+    if request.method == 'POST':
+        username = request.form['username'].strip()
+        password = request.form['password']
+        if not username or not password:
+            errors.append('Usuario y contraseña son obligatorios.')
+        elif User.query.filter_by(username=username).first():
+            errors.append('El usuario ya existe.')
+        elif len(password) < 6:
+            errors.append('La contraseña debe tener al menos 6 caracteres.')
+        if not errors:
+            user = User(username=username, role='user')
+            user.password = password
+            db.session.add(user)
+            db.session.commit()
+            flash('Cuenta creada correctamente. Ahora puedes iniciar sesión.', 'success')
+            return redirect(url_for('auth.login'))
+        else:
+            for e in errors:
+                flash(e, 'error')
+    return render_template('register.html')

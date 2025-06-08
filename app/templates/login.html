@@ -57,6 +57,10 @@
             </ul>
           {% endif %}
         {% endwith %}
+        <div class="mt-6 text-center">
+            <span class="text-gray-700">¿No tienes cuenta?</span>
+            <a href="{{ url_for('main.register') }}" class="text-blue-600 hover:underline font-semibold ml-1">Regístrate aquí</a>
+        </div>
     </div>
     <footer class="mt-12 text-center text-white/80 text-sm">
         © 2025 Gold Making

@@ -70,27 +70,29 @@
         <div x-data="{ open: false, farmId: null, farmName: '', submit() { document.getElementById('deleteFarmForm-' + this.farmId).submit(); this.open = false; } }">
         <table class="table-auto w-full border-collapse text-left bg-white/90 rounded shadow text-gray-900">
             <thead>
-              <tr class="bg-gradient-to-r from-indigo-200 via-purple-200 to-blue-200 text-indigo-900">
-                <th class="px-4 py-2" scope="col">Nombre</th>
-                <th class="px-4 py-2" scope="col">Veces Realizadas</th>
-                <th class="px-4 py-2" scope="col">Ganancia Estimada</th>
-                {% if current_user.role in ['admin', 'editor'] %}
-                  <th class="px-4 py-2" scope="col">Creado por</th>
-                {% endif %}
-                <th class="px-4 py-2" scope="col">Waypoint</th>
-                <th class="px-4 py-2" scope="col">Duración</th>
-                <th class="px-4 py-2" scope="col">Requerimientos</th>
-                <th class="px-4 py-2" scope="col">Profit/hr</th>
-                <th class="px-4 py-2" scope="col">Limitación</th>
-                <th class="px-4 py-2" scope="col">Datasets</th>
-                <th class="px-4 py-2" scope="col">Acciones</th>
-              </tr>
+                <tr class="bg-indigo-100 text-indigo-900">
+                    <th class="px-4 py-2">Nombre</th>
+                    <th class="px-4 py-2">Veces Realizadas</th>
+                    <th class="px-4 py-2">Ganancia/hr</th>
+                    <th class="px-4 py-2">Ganancia</th>
+                    {% if current_user.role in ['admin', 'editor'] %}
+                        <th class="px-4 py-2">Creado por</th>
+                    {% endif %}
+                    <th class="px-4 py-2">Waypoint</th>
+                    <th class="px-4 py-2">Duración</th>
+                    <th class="px-4 py-2">Requerimientos</th>
+                    <th class="px-4 py-2">Limitación</th>
+                    <th class="px-4 py-2">Acciones</th>
+                </tr>
             </thead>
             <tbody>
               {% for farm in farmeos %}
                 <tr class="border-t hover:bg-indigo-100 transition-colors duration-300 focus-within:bg-indigo-200">
                   <td class="px-4 py-2">{{ farm.nombre }}</td>
                   <td class="px-4 py-2">{{ farm.veces_realizadas }}</td>
+                  <td class="px-4 py-2">
+                    <span title="Valor exacto en oro decimal">{{ farm.profit_hr_formateado }} 🪙</span>
+                  </td>
                   <td class="px-4 py-2">{{ farm.ganancia_formateada }}</td>
                   {% if current_user.role in ['admin', 'editor'] %}
                     <td class="px-4 py-2">{{ farm.creado_por }}</td>
@@ -98,9 +100,7 @@
                   <td class="px-4 py-2">{{ farm.waypoint }}</td>
                   <td class="px-4 py-2">{{ farm.duracion }}</td>
                   <td class="px-4 py-2">{{ farm.requerimientos }}</td>
-                  <td class="px-4 py-2">{{ farm.profit_hr }}</td>
                   <td class="px-4 py-2">{{ farm.limitation }}</td>
-                  <td class="px-4 py-2">{{ farm.datasets }}</td>
                   <td class="px-4 py-2 space-x-4 flex items-center">
                     <a href="{{ url_for('main.edit_farm', farm_id=farm.id) }}" title="Editar" class="text-blue-600 hover:text-blue-800 transition" aria-label="Editar">
                       <!-- Icono lápiz -->

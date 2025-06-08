@@ -13,7 +13,6 @@ class Farm(db.Model):
     requerimientos = db.Column(db.String(200))
     profit_hr = db.Column(db.Float)
     limitation = db.Column(db.String(200))
-    datasets = db.Column(db.String(100))
 
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
