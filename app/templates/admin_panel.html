@@ -8,30 +8,30 @@
 </head>
 <body class="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900 font-sans text-lg text-gray-900">
     <!-- Menú superior estilo SnowCrows -->
-    <nav class="fixed top-0 left-0 w-full bg-gray-900 shadow-lg z-50 px-6 py-3 flex items-center justify-between">
+    <nav class="fixed top-0 left-0 w-full bg-gray-900 shadow-lg z-50 px-6 py-3 flex items-center justify-between" role="navigation" aria-label="Menú principal">
         <div class="flex items-center space-x-8">
             <a href="{{ url_for('main.index') }}" class="flex items-center space-x-2 group">
                 <span class="text-2xl"><svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' class='w-7 h-7 text-yellow-400 group-hover:scale-110 transition-transform'><circle cx='12' cy='12' r='10' stroke-width='2' /><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M8 12h8m-4-4v8' /></svg></span>
                 <span class="font-bold text-yellow-400 text-xl tracking-tight">Gold <span class="text-white">Making</span></span>
             </a>
             <div class="flex items-center space-x-4">
-                <a href="{{ url_for('main.index') }}" class="text-white hover:text-yellow-400 font-semibold transition-colors duration-200">Inicio</a>
-                <a href="{{ url_for('main.admin_panel') }}" class="text-white hover:text-yellow-400 font-semibold transition-colors duration-200">Panel Admin</a>
-                <a href="{{ url_for('main.users_panel') }}" class="text-white hover:text-yellow-400 font-semibold transition-colors duration-200">Usuarios</a>
-                <a href="{{ url_for('main.add_farm') }}" class="bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1 rounded-lg shadow font-semibold transition-all duration-200">+ Añadir Farmeo</a>
+                <a href="{{ url_for('main.index') }}" class="text-white hover:text-yellow-400 font-semibold transition-colors duration-200" aria-label="Inicio">Inicio</a>
+                <a href="{{ url_for('main.admin_panel') }}" class="text-white hover:text-yellow-400 font-semibold transition-colors duration-200" aria-label="Panel Admin">Panel Admin</a>
+                <a href="{{ url_for('main.users_panel') }}" class="text-white hover:text-yellow-400 font-semibold transition-colors duration-200" aria-label="Usuarios">Usuarios</a>
+                <a href="{{ url_for('main.add_farm') }}" class="bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1 rounded-lg shadow font-semibold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400" aria-label="Añadir farmeo">+ Añadir Farmeo</a>
             </div>
         </div>
         <div class="flex items-center space-x-4">
             {% if current_user.is_authenticated %}
                 <div x-data="{ open: false }" class="relative">
-                    <button @click="open = !open" @keydown.escape="open = false" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition">
+                    <button @click="open = !open" @keydown.escape="open = false" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 transition" aria-haspopup="true" aria-expanded="open" aria-label="Menú de usuario">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-yellow-400"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                         <span class="text-white font-semibold">{{ current_user.username }}</span>
                         <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                     </button>
-                    <div x-show="open" @click.away="open = false" x-transition class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50 border border-gray-200">
-                        <a href="{{ url_for('main.change_password') }}" class="block px-4 py-2 text-gray-700 hover:bg-indigo-100 transition-colors">Cambiar contraseña</a>
-                        <a href="{{ url_for('auth.logout') }}" class="block px-4 py-2 text-red-600 hover:bg-red-100 transition-colors">Cerrar sesión</a>
+                    <div x-show="open" @click.away="open = false" x-transition class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50 border border-gray-200" role="menu" aria-label="Opciones de usuario">
+                        <a href="{{ url_for('main.change_password') }}" class="block px-4 py-2 text-gray-700 hover:bg-indigo-100 transition-colors" role="menuitem" aria-label="Cambiar contraseña">Cambiar contraseña</a>
+                        <a href="{{ url_for('auth.logout') }}" class="block px-4 py-2 text-red-600 hover:bg-red-100 transition-colors" role="menuitem" aria-label="Cerrar sesión">Cerrar sesión</a>
                     </div>
                 </div>
             {% endif %}
@@ -43,26 +43,47 @@
             <h1 class="text-3xl font-bold text-indigo-900 drop-shadow">Panel Administrativo</h1>
             <a href="{{ url_for('main.index') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 font-semibold transition">← Volver al inicio</a>
         </div>
-        {% with messages = get_flashed_messages() %}
-          {% if messages %}
-            <ul>
-              {% for message in messages %}
-                <li class="text-green-600 mb-2">{{ message }}</li>
-              {% endfor %}
-            </ul>
-          {% endif %}
-        {% endwith %}
+        <!-- Toast de notificaciones -->
+        <div x-data="{ show: false, message: '', color: 'green' }" x-init='
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                show = true;
+                message = `{{ messages[0][1] }}`;
+                color = `{{ 'red' if messages[0][0] == 'error' else 'green' }}`;
+                setTimeout(() => show = false, 4000);
+            {% endif %}
+            {% endwith %}'
+            x-show="show"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 translate-y-2"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0"
+            class="fixed top-6 right-6 z-50">
+            <div :class="color === 'green' ? 'bg-green-500' : 'bg-red-500'" class="text-white px-6 py-3 rounded-lg shadow-lg flex items-center space-x-4 min-w-[220px]">
+                <span x-text="message"></span>
+                <button @click="show = false" class="ml-2 text-white/80 hover:text-white">&times;</button>
+            </div>
+        </div>
         <div class="overflow-x-auto">
+        <div x-data="{ open: false, farmId: null, farmName: '', submit() { document.getElementById('deleteFarmForm-' + this.farmId).submit(); this.open = false; } }">
         <table class="table-auto w-full border-collapse text-left bg-white/90 rounded shadow text-gray-900">
             <thead>
               <tr class="bg-gradient-to-r from-indigo-200 via-purple-200 to-blue-200 text-indigo-900">
-                <th class="px-4 py-2">Nombre</th>
-                <th class="px-4 py-2">Veces Realizadas</th>
-                <th class="px-4 py-2">Ganancia 🪙</th>
+                <th class="px-4 py-2" scope="col">Nombre</th>
+                <th class="px-4 py-2" scope="col">Veces Realizadas</th>
+                <th class="px-4 py-2" scope="col">Ganancia Estimada</th>
                 {% if current_user.role in ['admin', 'editor'] %}
-                  <th class="px-4 py-2">Creado por</th>
+                  <th class="px-4 py-2" scope="col">Creado por</th>
                 {% endif %}
-                <th class="px-4 py-2">Acciones</th>
+                <th class="px-4 py-2" scope="col">Waypoint</th>
+                <th class="px-4 py-2" scope="col">Duración</th>
+                <th class="px-4 py-2" scope="col">Requerimientos</th>
+                <th class="px-4 py-2" scope="col">Profit/hr</th>
+                <th class="px-4 py-2" scope="col">Limitación</th>
+                <th class="px-4 py-2" scope="col">Datasets</th>
+                <th class="px-4 py-2" scope="col">Acciones</th>
               </tr>
             </thead>
             <tbody>
@@ -74,13 +95,19 @@
                   {% if current_user.role in ['admin', 'editor'] %}
                     <td class="px-4 py-2">{{ farm.creado_por }}</td>
                   {% endif %}
+                  <td class="px-4 py-2">{{ farm.waypoint }}</td>
+                  <td class="px-4 py-2">{{ farm.duracion }}</td>
+                  <td class="px-4 py-2">{{ farm.requerimientos }}</td>
+                  <td class="px-4 py-2">{{ farm.profit_hr }}</td>
+                  <td class="px-4 py-2">{{ farm.limitation }}</td>
+                  <td class="px-4 py-2">{{ farm.datasets }}</td>
                   <td class="px-4 py-2 space-x-4 flex items-center">
                     <a href="{{ url_for('main.edit_farm', farm_id=farm.id) }}" title="Editar" class="text-blue-600 hover:text-blue-800 transition" aria-label="Editar">
                       <!-- Icono lápiz -->
                       <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><title>Editar</title><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 13l6.586-6.586a2 2 0 112.828 2.828L11.828 15.828a2 2 0 01-2.828 0L9 13zm0 0V17h4" /></svg>
                     </a>
-                    <form action="{{ url_for('main.delete_farm', farm_id=farm.id) }}" method="post" class="inline" onsubmit="return confirm('¿Seguro que deseas eliminar este farmeo?');">
-                      <button type="submit" title="Eliminar" class="text-red-600 hover:text-red-800 transition" aria-label="Eliminar">
+                    <form :id="'deleteFarmForm-{{ farm.id }}'" action="{{ url_for('main.delete_farm', farm_id=farm.id) }}" method="post" class="inline">
+                      <button type="button" title="Eliminar" class="text-red-600 hover:text-red-800 transition" aria-label="Eliminar" @click="open = true; farmId = '{{ farm.id }}'; farmName = '{{ farm.nombre }}'">
                         <!-- Icono papelera -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><title>Eliminar</title><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6M1 7h22M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" /></svg>
                       </button>
@@ -90,6 +117,42 @@
               {% endfor %}
             </tbody>
         </table>
+        <!-- Controles de paginación -->
+        {% if pagination.pages > 1 %}
+        <nav class="flex justify-center mt-6" aria-label="Paginación">
+            <ul class="inline-flex items-center space-x-1">
+                <li>
+                    <a href="{{ url_for('main.admin_panel', page=1) }}" class="px-3 py-1 rounded-l-lg border border-gray-300 bg-white hover:bg-gray-100 text-gray-700 font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 {% if not pagination.has_prev %}opacity-50 pointer-events-none{% endif %}" aria-label="Primera página">«</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('main.admin_panel', page=pagination.prev_num) }}" class="px-3 py-1 border border-gray-300 bg-white hover:bg-gray-100 text-gray-700 font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 {% if not pagination.has_prev %}opacity-50 pointer-events-none{% endif %}" aria-label="Página anterior">‹</a>
+                </li>
+                {% for p in range(1, pagination.pages + 1) %}
+                <li>
+                    <a href="{{ url_for('main.admin_panel', page=p) }}" class="px-3 py-1 border border-gray-300 bg-white hover:bg-indigo-100 text-gray-700 font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 {% if p == pagination.page %}bg-indigo-600 text-white pointer-events-none{% endif %}" aria-label="Página {{ p }}">{{ p }}</a>
+                </li>
+                {% endfor %}
+                <li>
+                    <a href="{{ url_for('main.admin_panel', page=pagination.next_num) }}" class="px-3 py-1 border border-gray-300 bg-white hover:bg-gray-100 text-gray-700 font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 {% if not pagination.has_next %}opacity-50 pointer-events-none{% endif %}" aria-label="Página siguiente">›</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('main.admin_panel', page=pagination.pages) }}" class="px-3 py-1 rounded-r-lg border border-gray-300 bg-white hover:bg-gray-100 text-gray-700 font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 {% if not pagination.has_next %}opacity-50 pointer-events-none{% endif %}" aria-label="Última página">»</a>
+                </li>
+            </ul>
+        </nav>
+        {% endif %}
+        <!-- Modal de confirmación de borrado -->
+        <div x-show="open" x-transition class="fixed inset-0 z-50 flex items-center justify-center bg-black/40" style="display: none;">
+            <div class="bg-white rounded-xl shadow-xl p-8 max-w-sm w-full text-center relative" @keydown.escape.window="open = false">
+                <h2 class="text-xl font-bold mb-4 text-red-700">¿Eliminar farmeo?</h2>
+                <p class="mb-6 text-gray-800">¿Seguro que deseas eliminar <span class="font-semibold text-red-600" x-text="farmName"></span>?</p>
+                <div class="flex justify-center gap-4">
+                    <button @click="open = false" class="px-4 py-2 rounded bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-400">Cancelar</button>
+                    <button id="deleteFarmModalEliminar" @click="submit()" class="px-4 py-2 rounded bg-red-600 hover:bg-red-700 text-white font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400">Eliminar</button>
+                </div>
+            </div>
+        </div>
+        </div>
         </div>
     </div>
     <footer class="mt-12 text-center text-white/80 text-sm">

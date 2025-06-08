@@ -8,17 +8,17 @@
 </head>
 <body class="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900 font-sans text-lg text-gray-900">
     <!-- Menú superior estilo SnowCrows -->
-    <nav class="fixed top-0 left-0 w-full bg-gray-900 shadow-lg z-50 px-6 py-3 flex items-center justify-between">
+    <nav class="fixed top-0 left-0 w-full bg-gray-900 shadow-lg z-50 px-6 py-3 flex items-center justify-between" role="navigation" aria-label="Menú principal">
         <div class="flex items-center space-x-8">
             <a href="{{ url_for('main.index') }}" class="flex items-center space-x-2 group">
                 <span class="text-2xl"><svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' class='w-7 h-7 text-yellow-400 group-hover:scale-110 transition-transform'><circle cx='12' cy='12' r='10' stroke-width='2' /><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M8 12h8m-4-4v8' /></svg></span>
                 <span class="font-bold text-yellow-400 text-xl tracking-tight">Gold <span class="text-white">Making</span></span>
             </a>
             <div class="flex items-center space-x-4">
-                <a href="{{ url_for('main.index') }}" class="text-white hover:text-yellow-400 font-semibold transition-colors duration-200">Inicio</a>
+                <a href="{{ url_for('main.index') }}" class="text-white hover:text-yellow-400 font-semibold transition-colors duration-200" aria-label="Inicio">Inicio</a>
                 {% if current_user.is_authenticated and current_user.role == 'admin' %}
-                    <a href="{{ url_for('main.admin_panel') }}" class="text-white hover:text-yellow-400 font-semibold transition-colors duration-200">Panel Admin</a>
-                    <a href="{{ url_for('main.users_panel') }}" class="text-white hover:text-yellow-400 font-semibold transition-colors duration-200">Usuarios</a>
+                    <a href="{{ url_for('main.admin_panel') }}" class="text-white hover:text-yellow-400 font-semibold transition-colors duration-200" aria-label="Panel Admin">Panel Admin</a>
+                    <a href="{{ url_for('main.users_panel') }}" class="text-white hover:text-yellow-400 font-semibold transition-colors duration-200" aria-label="Usuarios">Usuarios</a>
                     <a href="{{ url_for('main.create_user') }}" class="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-lg shadow font-semibold transition-all duration-200">+ Crear usuario</a>
                 {% endif %}
                 {% if current_user.is_authenticated and current_user.role in ['admin', 'editor'] %}
@@ -29,14 +29,14 @@
         <div class="flex items-center space-x-4">
             {% if current_user.is_authenticated %}
                 <div x-data="{ open: false }" class="relative">
-                    <button @click="open = !open" @keydown.escape="open = false" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition">
+                    <button @click="open = !open" @keydown.escape="open = false" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 transition" aria-haspopup="true" aria-expanded="open" aria-label="Menú de usuario">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-yellow-400"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                         <span class="text-white font-semibold">{{ current_user.username }}</span>
                         <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                     </button>
-                    <div x-show="open" @click.away="open = false" x-transition class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50 border border-gray-200">
-                        <a href="{{ url_for('main.change_password') }}" class="block px-4 py-2 text-gray-700 hover:bg-indigo-100 transition-colors">Cambiar contraseña</a>
-                        <a href="{{ url_for('auth.logout') }}" class="block px-4 py-2 text-red-600 hover:bg-red-100 transition-colors">Cerrar sesión</a>
+                    <div x-show="open" @click.away="open = false" x-transition class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50 border border-gray-200" role="menu" aria-label="Opciones de usuario">
+                        <a href="{{ url_for('main.change_password') }}" class="block px-4 py-2 text-gray-700 hover:bg-indigo-100 transition-colors" role="menuitem" aria-label="Cambiar contraseña">Cambiar contraseña</a>
+                        <a href="{{ url_for('auth.logout') }}" class="block px-4 py-2 text-red-600 hover:bg-red-100 transition-colors" role="menuitem" aria-label="Cerrar sesión">Cerrar sesión</a>
                     </div>
                 </div>
             {% else %}
@@ -47,9 +47,9 @@
     <!-- Espaciado para el menú fijo -->
     <div class="h-20"></div>
     <!-- Buscador mejorado -->
-    <form method="get" class="mb-6 flex justify-center">
-        <input type="text" name="q" value="{{ request.args.get('q', '') }}" placeholder="Buscar farmeo..." class="px-4 py-2 rounded-l-lg border-t border-b border-l border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 w-64 transition-all duration-300">
-        <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded-r-lg hover:bg-indigo-700 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-indigo-300">Buscar</button>
+    <form method="get" class="mb-6 flex justify-center" aria-label="Buscador de farmeos">
+        <input type="text" name="q" value="{{ request.args.get('q', '') }}" placeholder="Buscar farmeo..." class="px-4 py-2 rounded-l-lg border-t border-b border-l border-gray-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 w-64 transition-all duration-300" aria-label="Buscar farmeo">
+        <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded-r-lg hover:bg-indigo-700 transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-indigo-300" aria-label="Buscar">Buscar</button>
     </form>
     <div class="max-w-3xl mx-auto mt-4 bg-white/80 backdrop-blur-md rounded-xl shadow-lg p-8 transition-shadow duration-500 hover:shadow-2xl">
         <h1 class="text-3xl font-bold mb-6 text-center text-indigo-900 drop-shadow">Gold Making - Lista de Farmeos</h1>
@@ -57,9 +57,15 @@
             <table class="min-w-full bg-white/90 rounded shadow text-gray-900">
                 <thead>
                     <tr class="bg-gradient-to-r from-indigo-200 via-purple-200 to-blue-200 text-indigo-900">
-                        <th class="px-4 py-2">Nombre</th>
-                        <th class="px-4 py-2">Veces Realizadas</th>
-                        <th class="px-4 py-2">Ganancia Estimada</th>
+                        <th class="px-4 py-2" scope="col">Nombre</th>
+                        <th class="px-4 py-2" scope="col">Veces Realizadas</th>
+                        <th class="px-4 py-2" scope="col">Ganancia Estimada</th>
+                        <th class="px-4 py-2" scope="col">Waypoint</th>
+                        <th class="px-4 py-2" scope="col">Duración</th>
+                        <th class="px-4 py-2" scope="col">Requerimientos</th>
+                        <th class="px-4 py-2" scope="col">Profit/hr</th>
+                        <th class="px-4 py-2" scope="col">Limitación</th>
+                        <th class="px-4 py-2" scope="col">Datasets</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -70,6 +76,12 @@
                         <td class="px-4 py-2">
                             <span title="Valor exacto en oro decimal">{{ farm.ganancia_formateada }} 🪙</span>
                         </td>
+                        <td class="px-4 py-2">{{ farm.waypoint }}</td>
+                        <td class="px-4 py-2">{{ farm.duracion }}</td>
+                        <td class="px-4 py-2">{{ farm.requerimientos }}</td>
+                        <td class="px-4 py-2">{{ farm.profit_hr }}</td>
+                        <td class="px-4 py-2">{{ farm.limitation }}</td>
+                        <td class="px-4 py-2">{{ farm.datasets }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -82,5 +94,28 @@
     <footer class="mt-12 text-center text-white/80 text-sm">
         © 2025 Gold Making
     </footer>
+    <!-- Toast de notificaciones -->
+    <div x-data="{ show: false, message: '', color: 'green' }" x-init='
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            show = true;
+            message = `{{ messages[0][1] }}`;
+            color = `{{ 'red' if messages[0][0] == 'error' else 'green' }}`;
+            setTimeout(() => show = false, 4000);
+        {% endif %}
+        {% endwith %}'
+        x-show="show"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 translate-y-2"
+        x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-200"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        class="fixed top-6 right-6 z-50">
+        <div :class="color === 'green' ? 'bg-green-500' : 'bg-red-500'" class="text-white px-6 py-3 rounded-lg shadow-lg flex items-center space-x-4 min-w-[220px]">
+            <span x-text="message"></span>
+            <button @click="show = false" class="ml-2 text-white/80 hover:text-white">&times;</button>
+        </div>
+    </div>
 </body>
 </html>
