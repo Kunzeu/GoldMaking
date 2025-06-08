@@ -7,6 +7,7 @@ class Farm(db.Model):
     nombre = db.Column(db.String(100), nullable=False)
     veces_realizadas = db.Column(db.Integer, nullable=False)
     ganancia = db.Column(db.Float, nullable=False)
+    creado_por = db.Column(db.String(100))  # Nuevo campo para el usuario creador
 
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)

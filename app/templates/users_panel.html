@@ -3,31 +3,50 @@
 <head>
     <meta charset="UTF-8" />
     <title>Usuarios - Panel Admin</title>
-    <link href="{{ url_for('static', filename='tailwind.css') }}" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class="bg-gray-100 p-6">
-    <!-- Menú de navegación mejorado -->
-    <nav class="bg-white shadow-md rounded-lg px-6 py-3 flex flex-wrap items-center justify-between mb-8">
-        <div class="flex items-center space-x-4">
-            <span class="text-2xl font-bold text-yellow-600">🪙 Gold Making</span>
-            <a href="{{ url_for('main.index') }}" class="text-gray-700 hover:text-yellow-600 font-semibold transition">Inicio</a>
-            <a href="{{ url_for('main.admin_panel') }}" class="text-gray-700 hover:text-yellow-600 font-semibold transition">Panel Admin</a>
-            <a href="{{ url_for('main.users_panel') }}" class="text-gray-700 hover:text-yellow-600 font-semibold transition">Usuarios</a>
+<body class="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900 font-sans text-lg text-gray-900">
+    <!-- Menú superior estilo SnowCrows -->
+    <nav class="fixed top-0 left-0 w-full bg-gray-900 shadow-lg z-50 px-6 py-3 flex items-center justify-between">
+        <div class="flex items-center space-x-8">
+            <a href="{{ url_for('main.index') }}" class="flex items-center space-x-2 group">
+                <span class="text-2xl"><svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' class='w-7 h-7 text-yellow-400 group-hover:scale-110 transition-transform'><circle cx='12' cy='12' r='10' stroke-width='2' /><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M8 12h8m-4-4v8' /></svg></span>
+                <span class="font-bold text-yellow-400 text-xl tracking-tight">Gold <span class="text-white">Making</span></span>
+            </a>
+            <div class="flex items-center space-x-4">
+                <a href="{{ url_for('main.index') }}" class="text-white hover:text-yellow-400 font-semibold transition-colors duration-200">Inicio</a>
+                <a href="{{ url_for('main.admin_panel') }}" class="text-white hover:text-yellow-400 font-semibold transition-colors duration-200">Panel Admin</a>
+                <a href="{{ url_for('main.users_panel') }}" class="text-white hover:text-yellow-400 font-semibold transition-colors duration-200">Usuarios</a>
+                <a href="{{ url_for('main.create_user') }}" class="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-lg shadow font-semibold transition-all duration-200">+ Crear usuario</a>
+            </div>
         </div>
-        <div>
-            <a href="{{ url_for('auth.logout') }}" class="text-red-500 hover:text-red-700 font-semibold transition">Cerrar sesión</a>
+        <div class="flex items-center space-x-4">
+            {% if current_user.is_authenticated %}
+                <div x-data="{ open: false }" class="relative">
+                    <button @click="open = !open" @keydown.escape="open = false" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-yellow-400"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                        <span class="text-white font-semibold">{{ current_user.username }}</span>
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    </button>
+                    <div x-show="open" @click.away="open = false" x-transition class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50 border border-gray-200">
+                        <a href="{{ url_for('main.change_password') }}" class="block px-4 py-2 text-gray-700 hover:bg-indigo-100 transition-colors">Cambiar contraseña</a>
+                        <a href="{{ url_for('auth.logout') }}" class="block px-4 py-2 text-red-600 hover:bg-red-100 transition-colors">Cerrar sesión</a>
+                    </div>
+                </div>
+            {% endif %}
         </div>
     </nav>
-    <!-- Fin menú -->
-    <div class="max-w-4xl mx-auto bg-white rounded shadow p-6">
+    <div class="h-20"></div>
+    <div class="max-w-4xl mx-auto bg-white/80 backdrop-blur-md rounded-xl shadow-lg p-8 mt-10 transition-shadow duration-500 hover:shadow-2xl">
         <div class="mb-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold">Gestión de Usuarios</h1>
+            <h1 class="text-3xl font-bold text-indigo-900 drop-shadow">Gestión de Usuarios</h1>
             <a href="{{ url_for('main.admin_panel') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 font-semibold transition">← Volver al panel</a>
         </div>
-        <a href="{{ url_for('main.create_user') }}" class="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600 font-semibold transition mb-4 inline-block">+ Crear usuario</a>
-        <table class="min-w-full bg-white rounded shadow">
+        <div class="overflow-x-auto">
+        <table class="min-w-full bg-white/90 rounded shadow text-gray-900">
             <thead>
-                <tr class="bg-gray-200 text-left">
+                <tr class="bg-gradient-to-r from-indigo-200 via-purple-200 to-blue-200 text-indigo-900">
                     <th class="px-4 py-2">ID</th>
                     <th class="px-4 py-2">Usuario</th>
                     <th class="px-4 py-2">Rol</th>
@@ -36,29 +55,30 @@
             </thead>
             <tbody>
                 {% for user in users %}
-                <tr class="border-t">
+                <tr class="border-t hover:bg-indigo-100 transition-colors duration-300 focus-within:bg-indigo-200">
                     <td class="px-4 py-2">{{ user.id }}</td>
                     <td class="px-4 py-2">{{ user.username }}</td>
                     <td class="px-4 py-2">{{ user.role|capitalize }}</td>
-                    <td class="px-4 py-2">
-                        <a href="{{ url_for('main.edit_user', user_id=user.id) }}" class="text-green-600 hover:underline mr-2">Editar</a>
+                    <td class="px-4 py-2 flex items-center space-x-2">
+                        <a href="{{ url_for('main.edit_user', user_id=user.id) }}" title="Editar" class="text-green-600 hover:text-green-800 transition" aria-label="Editar">
+                            <!-- Icono lápiz -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><title>Editar</title><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 13l6.586-6.586a2 2 0 112.828 2.828L11.828 15.828a2 2 0 01-2.828 0L9 13zm0 0V17h4" /></svg>
+                        </a>
                         <form action="{{ url_for('main.delete_user', user_id=user.id) }}" method="post" style="display:inline;" onsubmit="return confirm('¿Seguro que deseas eliminar este usuario?');">
-                            <button type="submit" class="text-red-600 hover:underline">Eliminar</button>
+                            <button type="submit" title="Eliminar" class="text-red-600 hover:text-red-800 transition" aria-label="Eliminar">
+                                <!-- Icono papelera -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><title>Eliminar</title><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6M1 7h22M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" /></svg>
+                            </button>
                         </form>
                     </td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
-        {% with messages = get_flashed_messages() %}
-          {% if messages %}
-            <ul class="mt-4 text-red-600">
-              {% for message in messages %}
-                <li>{{ message }}</li>
-              {% endfor %}
-            </ul>
-          {% endif %}
-        {% endwith %}
+        </div>
     </div>
+    <footer class="mt-12 text-center text-white/80 text-sm">
+        © 2025 Gold Making
+    </footer>
 </body>
 </html> 

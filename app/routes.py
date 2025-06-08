@@ -2,6 +2,7 @@ from flask import Blueprint, render_template, request, redirect, url_for, flash
 from . import db
 from .models import Farm, User
 from flask_login import login_required, current_user
+from werkzeug.security import check_password_hash
 
 main_bp = Blueprint('main', __name__)
 
@@ -24,15 +25,22 @@ def gsc_to_float(g, s, c):
 
 @main_bp.route('/')
 def index():
-    farmeos = Farm.query.all()
+    q = request.args.get('q', '').strip()
+    if q:
+        # Filtrado insensible a mayúsculas/minúsculas y coincidencia parcial
+        farmeos = Farm.query.filter(Farm.nombre.ilike(f"%{q}%")).all()
+    else:
+        farmeos = Farm.query.all()
     farmeos_formateados = []
+    total_farmeos = len(farmeos)
+    suma_ganancias = sum(f.ganancia for f in farmeos)
     for farm in farmeos:
         farmeos_formateados.append({
             "nombre": farm.nombre,
             "veces_realizadas": farm.veces_realizadas,
             "ganancia_formateada": format_gsc(farm.ganancia)
         })
-    return render_template('index.html', farmeos=farmeos_formateados)
+    return render_template('index.html', farmeos=farmeos_formateados, total_farmeos=total_farmeos, suma_ganancias=suma_ganancias)
 
 @main_bp.route('/admin')
 @login_required
@@ -47,7 +55,8 @@ def admin_panel():
             "id": farm.id,
             "nombre": farm.nombre,
             "veces_realizadas": farm.veces_realizadas,
-            "ganancia_formateada": format_gsc(farm.ganancia)
+            "ganancia_formateada": format_gsc(farm.ganancia),
+            "creado_por": farm.creado_por
         })
     return render_template('admin_panel.html', farmeos=farmeos_formateados)
 
@@ -60,13 +69,17 @@ def add_farm():
     if request.method == 'POST':
         nombre = request.form['nombre']
         veces = int(request.form['veces_realizadas'])
-        # Recibir G, S, C por separado
         g = int(request.form.get('gold', 0))
         s = int(request.form.get('silver', 0))
         c = int(request.form.get('copper', 0))
         ganancia = gsc_to_float(g, s, c)
-
-        nuevo_farm = Farm(nombre=nombre, veces_realizadas=veces, ganancia=ganancia)
+        print("Usuario actual:", getattr(current_user, 'username', 'NO DISPONIBLE'))  # DEPURACIÓN
+        nuevo_farm = Farm(
+            nombre=nombre,
+            veces_realizadas=veces,
+            ganancia=ganancia,
+            creado_por=current_user.username
+        )
         db.session.add(nuevo_farm)
         db.session.commit()
         flash("Farmeo agregado correctamente.")
@@ -162,3 +175,23 @@ def delete_user(user_id):
     db.session.commit()
     flash('Usuario eliminado correctamente.')
     return redirect(url_for('main.users_panel'))
+
+@main_bp.route('/change_password', methods=['GET', 'POST'])
+@login_required
+def change_password():
+    if request.method == 'POST':
+        actual = request.form['actual']
+        nueva = request.form['nueva']
+        repetir = request.form['repetir']
+        if not current_user.check_password(actual):
+            flash('La contraseña actual es incorrecta.', 'error')
+        elif len(nueva) < 6:
+            flash('La nueva contraseña debe tener al menos 6 caracteres.', 'error')
+        elif nueva != repetir:
+            flash('Las contraseñas nuevas no coinciden.', 'error')
+        else:
+            current_user.password = nueva
+            db.session.commit()
+            flash('Contraseña cambiada correctamente.', 'success')
+            return redirect(url_for('main.index'))
+    return render_template('change_password.html')
