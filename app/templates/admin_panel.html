@@ -48,6 +48,27 @@
                 <span x-show="sidebarOpen" class="transition-all">Cerrar sesión</span>
             </a>
         </div>
+        <div class="mt-auto">
+        {% if not current_user.is_authenticated %}
+            <a href="{{ url_for('auth.login') }}" @click="if(window.innerWidth<768){sidebarOpen=false}" class="flex items-center gap-3 px-4 py-2 hover:bg-blue-700 rounded transition-all">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+                <span x-show="sidebarOpen" class="transition-all">Iniciar sesión</span>
+            </a>
+        {% else %}
+            <div x-data="{ open: false }" class="relative">
+                <button @click="open = !open" class="flex items-center gap-3 px-4 py-2 w-full hover:bg-indigo-700 rounded transition-all focus:outline-none">
+                    <svg class="w-6 h-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="10" stroke-width="2" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h8m-4-4v8" /></svg>
+                    <span x-show="sidebarOpen" class="transition-all">{{ current_user.username }}</span>
+                    <svg class="w-4 h-4 ml-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                </button>
+                <div x-show="open" @click.away="open = false"
+                    class="absolute bottom-0 left-full mb-2 w-48 bg-gray-800 rounded shadow-lg z-10">
+                    <a href="{{ url_for('main.change_password') }}" class="block px-4 py-2 hover:bg-indigo-600 rounded transition-all">Cambiar contraseña</a>
+                    <a href="{{ url_for('auth.logout') }}" class="block px-4 py-2 text-red-400 hover:bg-red-600 rounded transition-all">Cerrar sesión</a>
+                </div>
+            </div>
+        {% endif %}
+        </div>
     </aside>
     <!-- Contenido principal -->
     <div :class="sidebarOpen ? 'ml-56' : 'ml-20'" class="flex-1 transition-all duration-300">

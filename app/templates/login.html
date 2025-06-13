@@ -5,36 +5,78 @@
     <title>Iniciar sesión</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>
+        // Validación y limpieza de mensajes flash solo para login
+        document.addEventListener('DOMContentLoaded', function() {
+            // Limpiar mensajes flash al escribir
+            const inputs = document.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.addEventListener('input', function() {
+                    const alerts = document.querySelectorAll('.alert-login');
+                    alerts.forEach(a => a.remove());
+                });
+            });
+        });
+    </script>
 </head>
-<body class="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900 font-sans text-lg text-gray-900">
-    <!-- Eliminar cualquier navbar o sidebar, centrar el formulario, mejorar contraste y botones -->
-    <div class="max-w-sm mx-auto bg-white/80 p-8 rounded-xl shadow-lg mt-10 transition-shadow duration-500 hover:shadow-2xl">
-        <h1 class="text-3xl font-bold text-indigo-900 drop-shadow mb-4">Iniciar sesión</h1>
-        <form method="post">
-            <label class="block mb-2">Usuario:
-                <input type="text" name="username" class="border p-2 w-full mb-2 rounded transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-4 focus:ring-blue-300" required>
-            </label>
-            <label class="block mb-4">Contraseña:
-                <input type="password" name="password" class="border p-2 w-full mb-2 rounded" required>
-            </label>
-            <button type="submit" class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-4 py-2 rounded-lg shadow hover:from-blue-700 hover:to-indigo-800 font-semibold transition-all duration-300 w-full focus:outline-none focus:ring-4 focus:ring-blue-300">Entrar</button>
-    </form>
-    {% with messages = get_flashed_messages() %}
-      {% if messages %}
-        <ul class="mt-4 text-red-600">
-          {% for message in messages %}
-            <li>{{ message }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    {% endwith %}
+<body class="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900 font-sans text-lg text-gray-900 flex items-center justify-center">
+    <div class="max-w-md w-full bg-white/90 backdrop-blur-md rounded-xl shadow-lg p-8">
+        <div class="flex flex-col items-center mb-6">
+            <svg class="w-12 h-12 text-yellow-400 mb-2" ...></svg>
+            <span class="font-bold text-yellow-400 text-2xl">Gold <span class="text-indigo-900">Making</span></span>
+        </div>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% for category, message in messages %}
+                {% if (category == 'login' or category == 'error') and message %}
+                    <div class="alert-login bg-red-100 text-red-700 px-4 py-2 rounded mb-4">{{ message }}</div>
+                {% elif category == 'success' and message %}
+                    <div class="alert-login bg-green-100 text-green-700 px-4 py-2 rounded mb-4">{{ message }}</div>
+                {% endif %}
+            {% endfor %}
+        {% endwith %}
+        <form method="POST" class="space-y-4" aria-label="Formulario de inicio de sesión" onsubmit="return validarLogin()">
+            <div>
+                <label for="username" class="block font-semibold mb-1">Usuario</label>
+                <input type="text" class="w-full px-4 py-2 border rounded focus:outline-none focus-visible:ring-4 focus-visible:ring-yellow-400 transition-all duration-300" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password" class="block font-semibold mb-1">Contraseña</label>
+                <input type="password" class="w-full px-4 py-2 border rounded focus:outline-none focus-visible:ring-4 focus-visible:ring-yellow-400 transition-all duration-300" id="password" name="password" required>
+            </div>
+            <button type="submit" class="w-full bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-4 py-2 rounded-lg shadow hover:from-yellow-500 hover:to-yellow-700 font-semibold transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-yellow-300">Iniciar sesión</button>
+        </form>
         <div class="mt-6 text-center">
             <span class="text-gray-700">¿No tienes cuenta?</span>
             <a href="{{ url_for('main.register') }}" class="text-blue-600 hover:underline font-semibold ml-1">Regístrate aquí</a>
         </div>
+        <div class="mt-4 text-center">
+            <a href="{{ url_for('main.index') }}" class="text-indigo-700 hover:underline">← Volver al inicio</a>
+        </div>
     </div>
-    <footer class="mt-12 text-center text-white/80 text-sm">
+    <footer class="mt-12 text-center text-white/80 text-sm w-full absolute bottom-0">
         © 2025 Gold Making
     </footer>
+    <script>
+    function validarLogin() {
+        // Validación simple: campos no vacíos
+        const usuario = document.getElementById('username').value.trim();
+        const pass = document.getElementById('password').value.trim();
+        if (!usuario || !pass) {
+            mostrarError('Por favor, completa todos los campos.');
+            return false;
+        }
+        return true;
+    }
+    function mostrarError(msg) {
+        // Elimina errores previos
+        document.querySelectorAll('.alert-login').forEach(e => e.remove());
+        // Muestra nuevo error
+        const div = document.createElement('div');
+        div.className = 'alert-login bg-red-100 text-red-700 px-4 py-2 rounded mb-4';
+        div.innerText = msg;
+        const form = document.querySelector('form');
+        form.parentNode.insertBefore(div, form);
+    }
+    </script>
 </body>
 </html>

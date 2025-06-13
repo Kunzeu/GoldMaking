@@ -16,7 +16,7 @@ def login():
             login_user(user)
             return redirect(url_for('main.index'))
         else:
-            flash('Usuario o contraseña incorrectos')
+            flash('Usuario o contraseña incorrectos', 'login')
     return render_template('login.html')
 
 @auth_bp.route('/logout')
