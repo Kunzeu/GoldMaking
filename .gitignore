@@ -4,7 +4,7 @@ venv/
 # Archivos de Python compilados
 __pycache__/
 *.pyc
-
+.pystest_cache
 # Archivos de configuración y entorno
 .env
 config.py
@@ -17,6 +17,8 @@ config.py
 create_admin.py
 init_db.py
 insert_test_data.py
+create_tables.py
+app.log
 
 # Otros
 instance/
