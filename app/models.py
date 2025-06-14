@@ -7,7 +7,6 @@ class Farm(db.Model):
     nombre = db.Column(db.String(100), nullable=False)
     veces_realizadas = db.Column(db.Integer, nullable=False)
     ganancia = db.Column(db.Float, nullable=False)
-    creado_por = db.Column(db.String(100))  # Nuevo campo para el usuario creador
     waypoint = db.Column(db.String(100))
     duracion = db.Column(db.String(20))
     requerimientos = db.Column(db.String(200))

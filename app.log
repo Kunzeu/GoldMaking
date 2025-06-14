@@ -1,222 +1,9 @@
-2025-06-08 02:11:41,976 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-06-13 23:09:18,400 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:11:41,976 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:12:27,203 INFO: 127.0.0.1 - - [08/Jun/2025 02:12:27] "GET / HTTP/1.1" 200 -
-2025-06-08 02:12:59,668 INFO: 127.0.0.1 - - [08/Jun/2025 02:12:59] "GET /admin HTTP/1.1" 200 -
-2025-06-08 02:13:01,389 INFO: 127.0.0.1 - - [08/Jun/2025 02:13:01] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 02:13:02,329 INFO: 127.0.0.1 - - [08/Jun/2025 02:13:02] "GET /admin/create_user HTTP/1.1" 200 -
-2025-06-08 02:13:04,604 INFO: 127.0.0.1 - - [08/Jun/2025 02:13:04] "GET / HTTP/1.1" 200 -
-2025-06-08 02:13:10,305 INFO: 127.0.0.1 - - [08/Jun/2025 02:13:10] "GET /change_password HTTP/1.1" 200 -
-2025-06-08 02:13:16,090 INFO: 127.0.0.1 - - [08/Jun/2025 02:13:16] "GET / HTTP/1.1" 200 -
-2025-06-08 02:16:05,088 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:16:05,088 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:16:20,807 INFO: 127.0.0.1 - - [08/Jun/2025 02:16:20] "GET / HTTP/1.1" 200 -
-2025-06-08 02:19:57,854 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:19:57,870 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:20:03,986 INFO: 127.0.0.1 - - [08/Jun/2025 02:20:03] "GET / HTTP/1.1" 200 -
-2025-06-08 02:20:13,072 INFO: 127.0.0.1 - - [08/Jun/2025 02:20:13] "GET / HTTP/1.1" 200 -
-2025-06-08 02:20:14,282 INFO: 127.0.0.1 - - [08/Jun/2025 02:20:14] "GET /admin HTTP/1.1" 200 -
-2025-06-08 02:20:15,850 INFO: 127.0.0.1 - - [08/Jun/2025 02:20:15] "GET / HTTP/1.1" 200 -
-2025-06-08 02:20:23,426 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:20:23,427 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:28:30,779 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:28:30,780 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:28:35,982 INFO: 127.0.0.1 - - [08/Jun/2025 02:28:35] "GET / HTTP/1.1" 200 -
-2025-06-08 02:28:47,865 INFO: 127.0.0.1 - - [08/Jun/2025 02:28:47] "GET / HTTP/1.1" 200 -
-2025-06-08 02:30:45,141 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:30:45,141 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:30:50,617 INFO: 127.0.0.1 - - [08/Jun/2025 02:30:50] "GET / HTTP/1.1" 200 -
-2025-06-08 02:32:07,078 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:32:07,078 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:32:12,803 INFO: 127.0.0.1 - - [08/Jun/2025 02:32:12] "GET / HTTP/1.1" 200 -
-2025-06-08 02:35:34,548 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:35:34,548 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:35:39,524 INFO: 127.0.0.1 - - [08/Jun/2025 02:35:39] "GET / HTTP/1.1" 200 -
-2025-06-08 02:36:34,493 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:36:34,493 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:36:38,739 INFO: 127.0.0.1 - - [08/Jun/2025 02:36:38] "GET / HTTP/1.1" 200 -
-2025-06-08 02:36:45,555 INFO: 127.0.0.1 - - [08/Jun/2025 02:36:45] "[31m[1mPOST / HTTP/1.1[0m" 405 -
-2025-06-08 02:36:52,878 INFO: 127.0.0.1 - - [08/Jun/2025 02:36:52] "[31m[1mPOST / HTTP/1.1[0m" 405 -
-2025-06-08 02:36:56,455 INFO: 127.0.0.1 - - [08/Jun/2025 02:36:56] "GET / HTTP/1.1" 200 -
-2025-06-08 02:36:57,890 INFO: 127.0.0.1 - - [08/Jun/2025 02:36:57] "GET / HTTP/1.1" 200 -
-2025-06-08 02:37:00,109 INFO: 127.0.0.1 - - [08/Jun/2025 02:37:00] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
-2025-06-08 02:37:00,557 INFO: 127.0.0.1 - - [08/Jun/2025 02:37:00] "GET / HTTP/1.1" 200 -
-2025-06-08 02:37:01,565 INFO: 127.0.0.1 - - [08/Jun/2025 02:37:01] "GET /auth/login HTTP/1.1" 200 -
-2025-06-08 02:37:07,348 INFO: 127.0.0.1 - - [08/Jun/2025 02:37:07] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
-2025-06-08 02:37:07,945 INFO: 127.0.0.1 - - [08/Jun/2025 02:37:07] "GET / HTTP/1.1" 200 -
-2025-06-08 02:37:10,786 INFO: 127.0.0.1 - - [08/Jun/2025 02:37:10] "GET / HTTP/1.1" 200 -
-2025-06-08 02:37:36,079 INFO: 127.0.0.1 - - [08/Jun/2025 02:37:36] "GET / HTTP/1.1" 200 -
-2025-06-08 02:37:38,607 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:37:38,607 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:37:42,132 INFO: 127.0.0.1 - - [08/Jun/2025 02:37:42] "GET / HTTP/1.1" 200 -
-2025-06-08 02:37:44,259 INFO: 127.0.0.1 - - [08/Jun/2025 02:37:44] "GET / HTTP/1.1" 200 -
-2025-06-08 02:39:09,371 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:39:09,371 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:39:14,468 INFO: 127.0.0.1 - - [08/Jun/2025 02:39:14] "GET / HTTP/1.1" 200 -
-2025-06-08 02:39:38,250 INFO: 127.0.0.1 - - [08/Jun/2025 02:39:38] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-08 02:41:04,828 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:41:04,829 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:41:09,063 INFO: 127.0.0.1 - - [08/Jun/2025 02:41:09] "GET / HTTP/1.1" 200 -
-2025-06-08 02:41:23,982 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:41:23,983 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:41:28,423 INFO: 127.0.0.1 - - [08/Jun/2025 02:41:28] "GET / HTTP/1.1" 200 -
-2025-06-08 02:41:45,993 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:41:45,993 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:41:50,430 INFO: 127.0.0.1 - - [08/Jun/2025 02:41:50] "GET / HTTP/1.1" 200 -
-2025-06-08 02:42:16,523 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:42:16,524 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:42:20,921 INFO: 127.0.0.1 - - [08/Jun/2025 02:42:20] "GET / HTTP/1.1" 200 -
-2025-06-08 02:42:22,486 INFO: 127.0.0.1 - - [08/Jun/2025 02:42:22] "GET /admin HTTP/1.1" 200 -
-2025-06-08 02:42:24,361 INFO: 127.0.0.1 - - [08/Jun/2025 02:42:24] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 02:42:25,531 INFO: 127.0.0.1 - - [08/Jun/2025 02:42:25] "GET /admin/create_user HTTP/1.1" 200 -
-2025-06-08 02:42:36,265 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 02:42:36,267 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 02:42:40,131 INFO: 127.0.0.1 - - [08/Jun/2025 02:42:40] "GET / HTTP/1.1" 200 -
-2025-06-08 11:09:14,570 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 11:09:14,570 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 11:09:21,894 INFO: 127.0.0.1 - - [08/Jun/2025 11:09:21] "GET / HTTP/1.1" 200 -
-2025-06-08 11:09:22,017 INFO: 127.0.0.1 - - [08/Jun/2025 11:09:22] "GET / HTTP/1.1" 200 -
-2025-06-08 11:09:22,350 INFO: 127.0.0.1 - - [08/Jun/2025 11:09:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-06-08 11:09:25,833 INFO: 127.0.0.1 - - [08/Jun/2025 11:09:25] "GET /auth/login HTTP/1.1" 200 -
-2025-06-08 11:09:32,882 INFO: 127.0.0.1 - - [08/Jun/2025 11:09:32] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
-2025-06-08 11:09:33,524 INFO: 127.0.0.1 - - [08/Jun/2025 11:09:33] "GET / HTTP/1.1" 200 -
-2025-06-08 11:09:38,983 INFO: 127.0.0.1 - - [08/Jun/2025 11:09:38] "GET /admin HTTP/1.1" 200 -
-2025-06-08 11:09:41,108 INFO: 127.0.0.1 - - [08/Jun/2025 11:09:41] "GET / HTTP/1.1" 200 -
-2025-06-08 11:14:39,538 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 11:14:39,538 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 11:14:45,075 INFO: 127.0.0.1 - - [08/Jun/2025 11:14:45] "GET /admin HTTP/1.1" 200 -
-2025-06-08 11:14:47,406 INFO: 127.0.0.1 - - [08/Jun/2025 11:14:47] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 11:14:50,212 INFO: 127.0.0.1 - - [08/Jun/2025 11:14:50] "GET / HTTP/1.1" 200 -
-2025-06-08 11:14:56,701 INFO: 127.0.0.1 - - [08/Jun/2025 11:14:56] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 11:15:02,932 INFO: 127.0.0.1 - - [08/Jun/2025 11:15:02] "GET /admin HTTP/1.1" 200 -
-2025-06-08 11:15:09,208 INFO: 127.0.0.1 - - [08/Jun/2025 11:15:09] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 11:16:13,279 INFO: 127.0.0.1 - - [08/Jun/2025 11:16:13] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 11:16:17,414 INFO: 127.0.0.1 - - [08/Jun/2025 11:16:17] "GET /admin/edit_user/5 HTTP/1.1" 200 -
-2025-06-08 11:16:19,757 INFO: 127.0.0.1 - - [08/Jun/2025 11:16:19] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 11:19:40,603 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 11:19:40,603 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 11:26:45,431 INFO: 127.0.0.1 - - [08/Jun/2025 11:26:45] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 11:26:47,858 INFO: 127.0.0.1 - - [08/Jun/2025 11:26:47] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 11:26:55,242 INFO: 127.0.0.1 - - [08/Jun/2025 11:26:55] "[32mPOST /admin/delete_user/5 HTTP/1.1[0m" 302 -
-2025-06-08 11:26:55,857 INFO: 127.0.0.1 - - [08/Jun/2025 11:26:55] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 11:26:58,542 INFO: 127.0.0.1 - - [08/Jun/2025 11:26:58] "GET / HTTP/1.1" 200 -
-2025-06-08 11:38:29,110 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 11:38:29,110 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 11:38:35,002 INFO: 127.0.0.1 - - [08/Jun/2025 11:38:35] "GET / HTTP/1.1" 200 -
-2025-06-08 11:38:47,503 INFO: 127.0.0.1 - - [08/Jun/2025 11:38:47] "GET /admin HTTP/1.1" 200 -
-2025-06-08 11:38:49,495 INFO: 127.0.0.1 - - [08/Jun/2025 11:38:49] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 11:38:51,986 INFO: 127.0.0.1 - - [08/Jun/2025 11:38:51] "GET / HTTP/1.1" 200 -
-2025-06-08 11:39:54,596 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 11:39:54,596 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 11:40:02,316 INFO: 127.0.0.1 - - [08/Jun/2025 11:40:02] "GET / HTTP/1.1" 200 -
-2025-06-08 12:05:55,021 ERROR: Exception on /.well-known/appspecific/com.chrome.devtools.json [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
-    self.raise_routing_exception(req)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
-    raise request.routing_exception  # type: ignore[misc]
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
-    result = self.url_adapter.match(return_rule=True)  # type: ignore
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
-    raise NotFound() from None
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
-    self.dialect.do_execute(
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
-    cursor.execute(statement, parameters)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
-    result = self._query(query)
-             ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
-    conn.query(q)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 563, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
-    result.read()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 1199, in read
-    first_packet = self.connection._read_packet()
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 744, in _read_packet
-    packet_header = self._read_bytes(4)
-                    ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
-    raise err.OperationalError(
-pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
-
-The above exception was the direct cause of the following exception:
-
+ * Running on http://192.168.1.6:5000
+2025-06-13 23:09:18,400 INFO: [33mPress CTRL+C to quit[0m
+2025-06-13 23:09:24,633 ERROR: Exception on /admin/add [POST]
 Traceback (most recent call last):
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
     response = self.full_dispatch_request()
@@ -224,148 +11,30 @@ Traceback (most recent call last):
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
     rv = self.handle_user_exception(e)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 802, in handle_user_exception
-    return self.handle_http_exception(e)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 777, in handle_http_exception
-    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 414, in not_found
-    return render_template('404.html'), 404
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 127, in _render
-    app.update_template_context(context)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 530, in update_template_context
-    context.update(self.ensure_sync(func)())
-                   ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 405, in _user_context_processor
-    return dict(current_user=_get_user())
-                             ^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 370, in _get_user
-    current_app.login_manager._load_user()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\login_manager.py", line 364, in _load_user
-    user = self._user_callback(user_id)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\__init__.py", line 54, in load_user
-    return User.query.get(int(user_id))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<string>", line 2, in get
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 386, in warned
-    return fn(*args, **kwargs)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1126, in get
-    return self._get_impl(ident, loading.load_on_pk_identity)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1135, in _get_impl
-    return self.session._get_impl(
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3873, in _get_impl
-    return db_load_fn(
-           ^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 694, in load_on_pk_identity
-    session.execute(
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
-    return self._execute_internal(
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
-    result: Result[Any] = compile_state_cls.orm_execute_statement(
-                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
-    result = conn.execute(
-             ^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
-    return meth(
-           ^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
-    return connection._execute_clauseelement(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
-    ret = self._execute_context(
-          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
-    return self._exec_single_context(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
-    self._handle_dbapi_exception(
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
-    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
-    self.dialect.do_execute(
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
-    cursor.execute(statement, parameters)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
-    result = self._query(query)
-             ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
-    conn.query(q)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 563, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
-    result.read()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 1199, in read
-    first_packet = self.connection._read_packet()
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 744, in _read_packet
-    packet_header = self._read_bytes(4)
-                    ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
-    raise err.OperationalError(
-sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
-[SQL: SELECT user.id AS user_id, user.username AS user_username, user.password_hash AS user_password_hash, user.`role` AS user_role 
-FROM user 
-WHERE user.id = %(pk_1)s]
-[parameters: {'pk_1': 1}]
-(Background on this error at: https://sqlalche.me/e/20/e3q8)
-2025-06-08 12:05:55,144 INFO: 127.0.0.1 - - [08/Jun/2025 12:05:55] "[35m[1mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 500 -
-2025-06-08 12:05:55,177 ERROR: Error on request:
-Traceback (most recent call last):
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
     rv = self.dispatch_request()
          ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
-    self.raise_routing_exception(req)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
-    raise request.routing_exception  # type: ignore[misc]
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
-    result = self.url_adapter.match(return_rule=True)  # type: ignore
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
-    raise NotFound() from None
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
-    self.dialect.do_execute(
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
-    cursor.execute(statement, parameters)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
-    result = self._query(query)
-             ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
-    conn.query(q)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 563, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
-    result.read()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 1199, in read
-    first_packet = self.connection._read_packet()
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 744, in _read_packet
-    packet_header = self._read_bytes(4)
-                    ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
-    raise err.OperationalError(
-pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
-
-The above exception was the direct cause of the following exception:
-
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 215, in add_farm
+    nuevo_farm = Farm(
+                 ^^^^^
+  File "<string>", line 4, in __init__
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\state.py", line 571, in _initialize_instance
+    with util.safe_reraise():
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\state.py", line 569, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 2173, in _declarative_constructor
+    raise TypeError(
+TypeError: 'creado_por' is an invalid keyword argument for Farm
+2025-06-13 23:09:24,916 INFO: 127.0.0.1 - - [13/Jun/2025 23:09:24] "[35m[1mPOST /admin/add HTTP/1.1[0m" 500 -
+2025-06-13 23:09:34,704 ERROR: Exception on /admin/add [POST]
 Traceback (most recent call last):
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
     response = self.full_dispatch_request()
@@ -373,449 +42,199 @@ Traceback (most recent call last):
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
     rv = self.handle_user_exception(e)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 802, in handle_user_exception
-    return self.handle_http_exception(e)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 777, in handle_http_exception
-    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 414, in not_found
-    return render_template('404.html'), 404
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 127, in _render
-    app.update_template_context(context)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 530, in update_template_context
-    context.update(self.ensure_sync(func)())
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 405, in _user_context_processor
-    return dict(current_user=_get_user())
-                             ^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 370, in _get_user
-    current_app.login_manager._load_user()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\login_manager.py", line 364, in _load_user
-    user = self._user_callback(user_id)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\__init__.py", line 54, in load_user
-    return User.query.get(int(user_id))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<string>", line 2, in get
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 386, in warned
-    return fn(*args, **kwargs)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1126, in get
-    return self._get_impl(ident, loading.load_on_pk_identity)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1135, in _get_impl
-    return self.session._get_impl(
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3873, in _get_impl
-    return db_load_fn(
-           ^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 694, in load_on_pk_identity
-    session.execute(
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
-    return self._execute_internal(
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
-    result: Result[Any] = compile_state_cls.orm_execute_statement(
-                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
-    result = conn.execute(
-             ^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
-    return meth(
-           ^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
-    return connection._execute_clauseelement(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
-    ret = self._execute_context(
-          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
-    return self._exec_single_context(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
-    self._handle_dbapi_exception(
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
-    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
-    self.dialect.do_execute(
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
-    cursor.execute(statement, parameters)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
-    result = self._query(query)
-             ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
-    conn.query(q)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 563, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
-    result.read()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 1199, in read
-    first_packet = self.connection._read_packet()
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 744, in _read_packet
-    packet_header = self._read_bytes(4)
-                    ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
-    raise err.OperationalError(
-sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
-[SQL: SELECT user.id AS user_id, user.username AS user_username, user.password_hash AS user_password_hash, user.`role` AS user_role 
-FROM user 
-WHERE user.id = %(pk_1)s]
-[parameters: {'pk_1': 1}]
-(Background on this error at: https://sqlalche.me/e/20/e3q8)
-
-During handling of the above exception, another exception occurred:
-
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 215, in add_farm
+    nuevo_farm = Farm(
+                 ^^^^^
+  File "<string>", line 4, in __init__
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\state.py", line 571, in _initialize_instance
+    with util.safe_reraise():
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\state.py", line 569, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 2173, in _declarative_constructor
+    raise TypeError(
+TypeError: 'creado_por' is an invalid keyword argument for Farm
+2025-06-13 23:09:34,983 INFO: 127.0.0.1 - - [13/Jun/2025 23:09:34] "[35m[1mPOST /admin/add HTTP/1.1[0m" 500 -
+2025-06-13 23:09:43,747 INFO: 127.0.0.1 - - [13/Jun/2025 23:09:43] "GET /admin/add HTTP/1.1" 200 -
+2025-06-13 23:09:55,775 ERROR: Exception on /admin/add [POST]
 Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
-    execute(self.server.app)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\serving.py", line 331, in execute
-    application_iter = app(environ, start_response)
-                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1536, in __call__
-    return self.wsgi_app(environ, start_response)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1514, in wsgi_app
-    response = self.handle_exception(e)
-               ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 860, in handle_exception
-    server_error = self.ensure_sync(handler)(server_error)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 418, in server_error
-    return render_template('500.html'), 500
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 215, in add_farm
+    nuevo_farm = Farm(
+                 ^^^^^
+  File "<string>", line 4, in __init__
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\state.py", line 571, in _initialize_instance
+    with util.safe_reraise():
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\state.py", line 569, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 2173, in _declarative_constructor
+    raise TypeError(
+TypeError: 'creado_por' is an invalid keyword argument for Farm
+2025-06-13 23:09:56,055 INFO: 127.0.0.1 - - [13/Jun/2025 23:09:56] "[35m[1mPOST /admin/add HTTP/1.1[0m" 500 -
+2025-06-13 23:19:26,145 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-13 23:19:26,146 INFO: [33mPress CTRL+C to quit[0m
+2025-06-13 23:19:33,115 INFO: 127.0.0.1 - - [13/Jun/2025 23:19:33] "GET /admin/add HTTP/1.1" 200 -
+2025-06-13 23:19:42,617 INFO: 127.0.0.1 - - [13/Jun/2025 23:19:42] "GET /admin/add HTTP/1.1" 200 -
+2025-06-13 23:19:56,504 INFO: 127.0.0.1 - - [13/Jun/2025 23:19:56] "[32mPOST /admin/add HTTP/1.1[0m" 302 -
+2025-06-13 23:19:56,976 ERROR: Exception on /admin [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 157, in admin_panel
+    "creado_por": farm.creado_por,
+                  ^^^^^^^^^^^^^^^
+AttributeError: 'Farm' object has no attribute 'creado_por'
+2025-06-13 23:19:57,272 INFO: 127.0.0.1 - - [13/Jun/2025 23:19:57] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+2025-06-13 23:22:23,059 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-13 23:22:23,059 INFO: [33mPress CTRL+C to quit[0m
+2025-06-13 23:22:28,478 INFO: 127.0.0.1 - - [13/Jun/2025 23:22:28] "GET /admin/add HTTP/1.1" 200 -
+2025-06-13 23:22:32,693 INFO: 127.0.0.1 - - [13/Jun/2025 23:22:32] "GET /admin HTTP/1.1" 200 -
+2025-06-13 23:22:37,710 INFO: 127.0.0.1 - - [13/Jun/2025 23:22:37] "[32mPOST /admin/delete/1 HTTP/1.1[0m" 302 -
+2025-06-13 23:22:38,448 INFO: 127.0.0.1 - - [13/Jun/2025 23:22:38] "GET /admin HTTP/1.1" 200 -
+2025-06-13 23:22:41,349 INFO: 127.0.0.1 - - [13/Jun/2025 23:22:41] "GET /admin/add HTTP/1.1" 200 -
+2025-06-13 23:22:56,067 INFO: 127.0.0.1 - - [13/Jun/2025 23:22:56] "[32mPOST /admin/add HTTP/1.1[0m" 302 -
+2025-06-13 23:22:56,806 INFO: 127.0.0.1 - - [13/Jun/2025 23:22:56] "GET /admin HTTP/1.1" 200 -
+2025-06-13 23:23:03,906 INFO: 127.0.0.1 - - [13/Jun/2025 23:23:03] "GET /admin/create_user HTTP/1.1" 200 -
+2025-06-13 23:23:06,558 INFO: 127.0.0.1 - - [13/Jun/2025 23:23:06] "GET /admin/users HTTP/1.1" 200 -
+2025-06-13 23:27:14,252 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-13 23:27:14,252 INFO: [33mPress CTRL+C to quit[0m
+2025-06-13 23:27:23,996 INFO: 127.0.0.1 - - [13/Jun/2025 23:27:23] "GET /admin/users HTTP/1.1" 200 -
+2025-06-13 23:27:26,725 INFO: 127.0.0.1 - - [13/Jun/2025 23:27:26] "[32mPOST /admin/delete_user/3 HTTP/1.1[0m" 302 -
+2025-06-13 23:27:27,365 INFO: 127.0.0.1 - - [13/Jun/2025 23:27:27] "GET /admin/users HTTP/1.1" 200 -
+2025-06-13 23:28:16,994 INFO: 127.0.0.1 - - [13/Jun/2025 23:28:16] "GET /farms HTTP/1.1" 200 -
+2025-06-13 23:28:20,413 ERROR: Exception on /farmeo/2 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 420, in farmeo_detail
+    return render_template('farmeo_detail.html', farm=farm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
     return _render(app, template, context)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 127, in _render
-    app.update_template_context(context)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 530, in update_template_context
-    context.update(self.ensure_sync(func)())
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 405, in _user_context_processor
-    return dict(current_user=_get_user())
-                             ^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 370, in _get_user
-    current_app.login_manager._load_user()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\login_manager.py", line 364, in _load_user
-    user = self._user_callback(user_id)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\__init__.py", line 54, in load_user
-    return User.query.get(int(user_id))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<string>", line 2, in get
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 386, in warned
-    return fn(*args, **kwargs)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1126, in get
-    return self._get_impl(ident, loading.load_on_pk_identity)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1135, in _get_impl
-    return self.session._get_impl(
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3873, in _get_impl
-    return db_load_fn(
-           ^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 694, in load_on_pk_identity
-    session.execute(
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
-    return self._execute_internal(
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
-    result: Result[Any] = compile_state_cls.orm_execute_statement(
-                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
-    result = conn.execute(
-             ^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
-    return meth(
-           ^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
-    return connection._execute_clauseelement(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
-    ret = self._execute_context(
-          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1809, in _execute_context
-    conn = self._revalidate_connection()
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 675, in _revalidate_connection
-    self._invalid_transaction()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 665, in _invalid_transaction
-    raise exc.PendingRollbackError(
-sqlalchemy.exc.PendingRollbackError: Can't reconnect until invalid transaction is rolled back.  Please rollback() fully before proceeding (Background on this error at: https://sqlalche.me/e/20/8s2b)
-2025-06-08 12:12:15,558 INFO: 127.0.0.1 - - [08/Jun/2025 12:12:15] "GET /admin HTTP/1.1" 200 -
-2025-06-08 12:12:16,045 INFO: 127.0.0.1 - - [08/Jun/2025 12:12:16] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-08 12:17:49,210 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 12:17:49,211 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 12:17:53,561 INFO: 127.0.0.1 - - [08/Jun/2025 12:17:53] "GET /admin HTTP/1.1" 200 -
-2025-06-08 12:21:31,982 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 12:21:31,982 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 12:21:41,587 INFO: 127.0.0.1 - - [08/Jun/2025 12:21:41] "GET /admin HTTP/1.1" 200 -
-2025-06-08 12:21:50,588 INFO: 127.0.0.1 - - [08/Jun/2025 12:21:50] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-08 12:41:19,807 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 12:41:19,807 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 12:41:27,739 INFO: 127.0.0.1 - - [08/Jun/2025 12:41:27] "GET /admin HTTP/1.1" 200 -
-2025-06-08 12:44:09,794 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 12:44:09,794 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 12:44:14,690 INFO: 127.0.0.1 - - [08/Jun/2025 12:44:14] "GET /admin HTTP/1.1" 200 -
-2025-06-08 12:44:52,323 INFO: 127.0.0.1 - - [08/Jun/2025 12:44:52] "GET /admin/add HTTP/1.1" 200 -
-2025-06-08 12:44:54,799 INFO: 127.0.0.1 - - [08/Jun/2025 12:44:54] "GET / HTTP/1.1" 200 -
-2025-06-08 12:44:57,903 INFO: 127.0.0.1 - - [08/Jun/2025 12:44:57] "GET /admin HTTP/1.1" 200 -
-2025-06-08 12:45:05,478 INFO: 127.0.0.1 - - [08/Jun/2025 12:45:05] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
-2025-06-08 12:45:05,921 INFO: 127.0.0.1 - - [08/Jun/2025 12:45:05] "GET / HTTP/1.1" 200 -
-2025-06-08 12:45:08,702 INFO: 127.0.0.1 - - [08/Jun/2025 12:45:08] "GET /auth/login HTTP/1.1" 200 -
-2025-06-08 12:45:14,166 INFO: 127.0.0.1 - - [08/Jun/2025 12:45:14] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
-2025-06-08 12:45:14,754 INFO: 127.0.0.1 - - [08/Jun/2025 12:45:14] "GET / HTTP/1.1" 200 -
-2025-06-08 12:45:34,318 INFO: 127.0.0.1 - - [08/Jun/2025 12:45:34] "GET /admin HTTP/1.1" 200 -
-2025-06-08 12:45:38,213 INFO: 127.0.0.1 - - [08/Jun/2025 12:45:38] "GET / HTTP/1.1" 200 -
-2025-06-08 12:47:45,479 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 12:47:45,479 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 12:49:22,065 INFO: 127.0.0.1 - - [08/Jun/2025 12:49:22] "GET /admin HTTP/1.1" 200 -
-2025-06-08 12:49:25,982 INFO: 127.0.0.1 - - [08/Jun/2025 12:49:25] "GET / HTTP/1.1" 200 -
-2025-06-08 12:49:42,434 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 12:49:42,434 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 12:49:46,771 INFO: 127.0.0.1 - - [08/Jun/2025 12:49:46] "GET /admin HTTP/1.1" 200 -
-2025-06-08 12:49:48,476 INFO: 127.0.0.1 - - [08/Jun/2025 12:49:48] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 12:50:05,838 INFO: 127.0.0.1 - - [08/Jun/2025 12:50:05] "GET / HTTP/1.1" 200 -
-2025-06-08 12:50:10,126 INFO: 127.0.0.1 - - [08/Jun/2025 12:50:10] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 12:50:57,486 INFO: 127.0.0.1 - - [08/Jun/2025 12:50:57] "GET /admin/create_user HTTP/1.1" 200 -
-2025-06-08 12:51:01,526 INFO: 127.0.0.1 - - [08/Jun/2025 12:51:01] "GET /admin/add HTTP/1.1" 200 -
-2025-06-08 12:51:04,810 INFO: 127.0.0.1 - - [08/Jun/2025 12:51:04] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 12:51:10,273 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 12:51:10,273 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 12:51:16,181 INFO: 127.0.0.1 - - [08/Jun/2025 12:51:16] "GET /admin/create_user HTTP/1.1" 200 -
-2025-06-08 12:51:19,878 INFO: 127.0.0.1 - - [08/Jun/2025 12:51:19] "GET /admin/add HTTP/1.1" 200 -
-2025-06-08 12:51:24,940 INFO: 127.0.0.1 - - [08/Jun/2025 12:51:24] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 12:51:26,543 INFO: 127.0.0.1 - - [08/Jun/2025 12:51:26] "GET /admin/edit_user/6 HTTP/1.1" 200 -
-2025-06-08 12:51:28,787 INFO: 127.0.0.1 - - [08/Jun/2025 12:51:28] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 12:52:15,820 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 12:52:15,820 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 12:52:20,376 INFO: 127.0.0.1 - - [08/Jun/2025 12:52:20] "GET /admin HTTP/1.1" 200 -
-2025-06-08 12:52:33,970 INFO: 127.0.0.1 - - [08/Jun/2025 12:52:33] "GET / HTTP/1.1" 200 -
-2025-06-08 12:54:50,921 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 12:54:50,922 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 12:54:58,481 INFO: 127.0.0.1 - - [08/Jun/2025 12:54:58] "GET / HTTP/1.1" 200 -
-2025-06-08 13:00:31,784 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 13:00:31,785 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 13:00:39,486 INFO: 127.0.0.1 - - [08/Jun/2025 13:00:39] "GET / HTTP/1.1" 200 -
-2025-06-08 13:00:52,984 INFO: 127.0.0.1 - - [08/Jun/2025 13:00:52] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-08 13:01:09,407 INFO: 127.0.0.1 - - [08/Jun/2025 13:01:09] "GET /admin HTTP/1.1" 200 -
-2025-06-08 13:01:13,777 INFO: 127.0.0.1 - - [08/Jun/2025 13:01:13] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 13:01:17,963 INFO: 127.0.0.1 - - [08/Jun/2025 13:01:17] "GET /admin/create_user HTTP/1.1" 200 -
-2025-06-08 13:05:22,442 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 13:05:22,442 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 13:05:26,918 INFO: 127.0.0.1 - - [08/Jun/2025 13:05:26] "GET /admin HTTP/1.1" 200 -
-2025-06-08 13:06:19,145 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 13:06:19,146 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 13:06:24,235 INFO: 127.0.0.1 - - [08/Jun/2025 13:06:24] "GET /admin HTTP/1.1" 200 -
-2025-06-08 13:06:28,074 INFO: 127.0.0.1 - - [08/Jun/2025 13:06:28] "GET / HTTP/1.1" 200 -
-2025-06-08 13:06:31,259 INFO: 127.0.0.1 - - [08/Jun/2025 13:06:31] "GET /admin HTTP/1.1" 200 -
-2025-06-08 13:07:04,508 INFO: 127.0.0.1 - - [08/Jun/2025 13:07:04] "GET / HTTP/1.1" 200 -
-2025-06-08 13:07:08,011 INFO: 127.0.0.1 - - [08/Jun/2025 13:07:08] "GET /admin HTTP/1.1" 200 -
-2025-06-08 13:07:34,138 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 13:07:34,138 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 13:07:42,339 INFO: 127.0.0.1 - - [08/Jun/2025 13:07:42] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 13:07:48,153 INFO: 127.0.0.1 - - [08/Jun/2025 13:07:48] "GET /admin/edit_user/4 HTTP/1.1" 200 -
-2025-06-08 13:10:18,337 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 13:10:18,338 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 13:10:23,337 INFO: 127.0.0.1 - - [08/Jun/2025 13:10:23] "GET / HTTP/1.1" 200 -
-2025-06-08 13:10:26,744 INFO: 127.0.0.1 - - [08/Jun/2025 13:10:26] "GET /admin HTTP/1.1" 200 -
-2025-06-08 13:10:29,025 INFO: 127.0.0.1 - - [08/Jun/2025 13:10:29] "GET /admin/create_user HTTP/1.1" 200 -
-2025-06-08 13:15:39,159 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 13:15:39,159 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 13:15:46,261 INFO: 127.0.0.1 - - [08/Jun/2025 13:15:46] "GET / HTTP/1.1" 200 -
-2025-06-08 13:15:49,463 INFO: 127.0.0.1 - - [08/Jun/2025 13:15:49] "GET /admin HTTP/1.1" 200 -
-2025-06-08 13:15:51,520 INFO: 127.0.0.1 - - [08/Jun/2025 13:15:51] "GET /admin/create_user HTTP/1.1" 200 -
-2025-06-08 13:16:08,998 INFO: 127.0.0.1 - - [08/Jun/2025 13:16:08] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 13:16:13,632 INFO: 127.0.0.1 - - [08/Jun/2025 13:16:13] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 13:16:17,069 INFO: 127.0.0.1 - - [08/Jun/2025 13:16:17] "GET /admin/edit_user/6 HTTP/1.1" 200 -
-2025-06-08 13:16:21,450 INFO: 127.0.0.1 - - [08/Jun/2025 13:16:21] "GET /admin/add HTTP/1.1" 200 -
-2025-06-08 13:16:48,616 INFO: 127.0.0.1 - - [08/Jun/2025 13:16:48] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 13:17:20,281 INFO: 127.0.0.1 - - [08/Jun/2025 13:17:20] "GET /admin/edit_user/6 HTTP/1.1" 200 -
-2025-06-08 13:17:22,261 INFO: 127.0.0.1 - - [08/Jun/2025 13:17:22] "GET /admin/add HTTP/1.1" 200 -
-2025-06-08 13:24:32,817 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 13:24:32,817 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 13:24:38,798 INFO: 127.0.0.1 - - [08/Jun/2025 13:24:38] "GET / HTTP/1.1" 200 -
-2025-06-08 13:29:06,658 INFO: 127.0.0.1 - - [08/Jun/2025 13:29:06] "GET /admin HTTP/1.1" 200 -
-2025-06-08 13:29:08,154 INFO: 127.0.0.1 - - [08/Jun/2025 13:29:08] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 13:34:07,390 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.2:5000
-2025-06-08 13:34:07,390 INFO: [33mPress CTRL+C to quit[0m
-2025-06-08 13:34:09,937 INFO: 127.0.0.1 - - [08/Jun/2025 13:34:09] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
-2025-06-08 13:34:10,400 INFO: 127.0.0.1 - - [08/Jun/2025 13:34:10] "GET / HTTP/1.1" 200 -
-2025-06-08 13:34:34,609 INFO: 127.0.0.1 - - [08/Jun/2025 13:34:34] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
-2025-06-08 13:34:34,627 INFO: 127.0.0.1 - - [08/Jun/2025 13:34:34] "GET /auth/login?next=/auth/logout HTTP/1.1" 200 -
-2025-06-08 13:34:38,442 INFO: 127.0.0.1 - - [08/Jun/2025 13:34:38] "[32mPOST /auth/login?next=/auth/logout HTTP/1.1[0m" 302 -
-2025-06-08 13:34:39,036 INFO: 127.0.0.1 - - [08/Jun/2025 13:34:39] "GET / HTTP/1.1" 200 -
-2025-06-08 13:35:16,676 INFO: 127.0.0.1 - - [08/Jun/2025 13:35:16] "GET /admin HTTP/1.1" 200 -
-2025-06-08 13:35:18,160 INFO: 127.0.0.1 - - [08/Jun/2025 13:35:18] "GET /admin/users HTTP/1.1" 200 -
-2025-06-08 13:35:19,136 INFO: 127.0.0.1 - - [08/Jun/2025 13:35:19] "GET /admin/create_user HTTP/1.1" 200 -
-2025-06-08 13:35:20,992 INFO: 127.0.0.1 - - [08/Jun/2025 13:35:20] "GET / HTTP/1.1" 200 -
-2025-06-12 23:26:36,713 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\farmeo_detail.html", line 55, in top-level template code
+    <span class="font-semibold">Ganancia:</span> {{ format_gsc(farm.ganancia) }} \U0001fa99
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'format_gsc' is undefined
+2025-06-13 23:28:20,734 INFO: 127.0.0.1 - - [13/Jun/2025 23:28:20] "[35m[1mGET /farmeo/2 HTTP/1.1[0m" 500 -
+2025-06-13 23:28:34,067 INFO: 127.0.0.1 - - [13/Jun/2025 23:28:34] "GET /admin HTTP/1.1" 200 -
+2025-06-13 23:28:41,773 INFO: 127.0.0.1 - - [13/Jun/2025 23:28:41] "GET /admin HTTP/1.1" 200 -
+2025-06-13 23:28:43,502 INFO: 127.0.0.1 - - [13/Jun/2025 23:28:43] "GET /farms HTTP/1.1" 200 -
+2025-06-13 23:28:44,786 INFO: 127.0.0.1 - - [13/Jun/2025 23:28:44] "GET / HTTP/1.1" 200 -
+2025-06-13 23:28:49,227 INFO: 127.0.0.1 - - [13/Jun/2025 23:28:49] "GET /farms HTTP/1.1" 200 -
+2025-06-13 23:30:21,451 INFO: 127.0.0.1 - - [13/Jun/2025 23:30:21] "GET / HTTP/1.1" 200 -
+2025-06-13 23:33:08,178 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.1.6:5000
-2025-06-12 23:26:36,713 INFO: [33mPress CTRL+C to quit[0m
-2025-06-12 23:26:41,584 INFO: 127.0.0.1 - - [12/Jun/2025 23:26:41] "GET / HTTP/1.1" 200 -
-2025-06-12 23:27:11,647 INFO: 127.0.0.1 - - [12/Jun/2025 23:27:11] "[32mGET /admin HTTP/1.1[0m" 302 -
-2025-06-12 23:27:12,563 INFO: 127.0.0.1 - - [12/Jun/2025 23:27:12] "GET / HTTP/1.1" 200 -
-2025-06-12 23:30:29,503 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-06-13 23:33:08,180 INFO: [33mPress CTRL+C to quit[0m
+2025-06-13 23:33:13,590 INFO: 127.0.0.1 - - [13/Jun/2025 23:33:13] "GET / HTTP/1.1" 200 -
+2025-06-13 23:33:16,227 INFO: 127.0.0.1 - - [13/Jun/2025 23:33:16] "GET /about HTTP/1.1" 200 -
+2025-06-13 23:34:01,276 INFO: 127.0.0.1 - - [13/Jun/2025 23:34:01] "GET /farms HTTP/1.1" 200 -
+2025-06-13 23:34:04,260 INFO: 127.0.0.1 - - [13/Jun/2025 23:34:04] "GET /admin/create_user HTTP/1.1" 200 -
+2025-06-13 23:34:06,331 INFO: 127.0.0.1 - - [13/Jun/2025 23:34:06] "GET /about HTTP/1.1" 200 -
+2025-06-13 23:34:53,294 INFO: 127.0.0.1 - - [13/Jun/2025 23:34:53] "GET / HTTP/1.1" 200 -
+2025-06-13 23:37:48,324 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.1.6:5000
-2025-06-12 23:30:29,503 INFO: [33mPress CTRL+C to quit[0m
-2025-06-12 23:30:33,850 INFO: 127.0.0.1 - - [12/Jun/2025 23:30:33] "GET / HTTP/1.1" 200 -
-2025-06-12 23:30:38,213 INFO: 127.0.0.1 - - [12/Jun/2025 23:30:38] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
-2025-06-12 23:30:38,655 INFO: 127.0.0.1 - - [12/Jun/2025 23:30:38] "GET / HTTP/1.1" 200 -
-2025-06-12 23:30:41,172 INFO: 127.0.0.1 - - [12/Jun/2025 23:30:41] "GET /auth/login HTTP/1.1" 200 -
-2025-06-12 23:30:44,346 INFO: 127.0.0.1 - - [12/Jun/2025 23:30:44] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
-2025-06-12 23:30:44,935 INFO: 127.0.0.1 - - [12/Jun/2025 23:30:44] "GET / HTTP/1.1" 200 -
-2025-06-12 23:31:47,417 INFO: 127.0.0.1 - - [12/Jun/2025 23:31:47] "GET /admin/users HTTP/1.1" 200 -
-2025-06-12 23:31:52,098 INFO: 127.0.0.1 - - [12/Jun/2025 23:31:52] "GET / HTTP/1.1" 200 -
-2025-06-12 23:31:53,769 INFO: 127.0.0.1 - - [12/Jun/2025 23:31:53] "GET /admin HTTP/1.1" 200 -
-2025-06-12 23:31:56,753 INFO: 127.0.0.1 - - [12/Jun/2025 23:31:56] "GET /admin/users HTTP/1.1" 200 -
-2025-06-12 23:31:59,583 INFO: 127.0.0.1 - - [12/Jun/2025 23:31:59] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
-2025-06-12 23:32:00,024 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:00] "GET / HTTP/1.1" 200 -
-2025-06-12 23:32:04,804 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:04] "GET / HTTP/1.1" 200 -
-2025-06-12 23:32:09,167 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:09] "GET /auth/login HTTP/1.1" 200 -
-2025-06-12 23:32:19,229 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:19] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
-2025-06-12 23:32:19,817 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:19] "GET / HTTP/1.1" 200 -
-2025-06-12 23:32:24,813 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:24] "GET /admin HTTP/1.1" 200 -
-2025-06-12 23:32:25,694 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:25] "GET /admin/users HTTP/1.1" 200 -
-2025-06-12 23:32:31,309 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:31] "GET /admin/edit_user/3 HTTP/1.1" 200 -
-2025-06-12 23:32:34,314 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:34] "[32mPOST /admin/edit_user/3 HTTP/1.1[0m" 302 -
-2025-06-12 23:32:34,901 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:34] "GET /admin/users HTTP/1.1" 200 -
-2025-06-12 23:32:36,625 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:36] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
-2025-06-12 23:32:37,067 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:37] "GET / HTTP/1.1" 200 -
-2025-06-12 23:32:41,920 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:41] "GET /auth/login HTTP/1.1" 200 -
-2025-06-12 23:32:49,971 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:49] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
-2025-06-12 23:32:50,559 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:50] "GET / HTTP/1.1" 200 -
-2025-06-12 23:32:52,939 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:52] "GET /admin/add HTTP/1.1" 200 -
-2025-06-12 23:32:58,395 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:58] "[32mGET /admin/create_user HTTP/1.1[0m" 302 -
-2025-06-12 23:32:58,836 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:58] "[32mGET /admin HTTP/1.1[0m" 302 -
-2025-06-12 23:32:59,425 INFO: 127.0.0.1 - - [12/Jun/2025 23:32:59] "GET / HTTP/1.1" 200 -
-2025-06-12 23:33:01,285 INFO: 127.0.0.1 - - [12/Jun/2025 23:33:01] "GET /admin/add HTTP/1.1" 200 -
-2025-06-12 23:33:03,630 INFO: 127.0.0.1 - - [12/Jun/2025 23:33:03] "[32mGET /admin HTTP/1.1[0m" 302 -
-2025-06-12 23:33:04,218 INFO: 127.0.0.1 - - [12/Jun/2025 23:33:04] "GET / HTTP/1.1" 200 -
-2025-06-12 23:36:17,822 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-06-13 23:37:48,324 INFO: [33mPress CTRL+C to quit[0m
+2025-06-13 23:37:54,629 INFO: 127.0.0.1 - - [13/Jun/2025 23:37:54] "GET / HTTP/1.1" 200 -
+2025-06-13 23:38:02,386 INFO: 127.0.0.1 - - [13/Jun/2025 23:38:02] "GET /farms HTTP/1.1" 200 -
+2025-06-13 23:38:04,316 INFO: 127.0.0.1 - - [13/Jun/2025 23:38:04] "GET / HTTP/1.1" 200 -
+2025-06-13 23:45:03,028 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.1.6:5000
-2025-06-12 23:36:17,822 INFO: [33mPress CTRL+C to quit[0m
-2025-06-12 23:36:22,305 INFO: 127.0.0.1 - - [12/Jun/2025 23:36:22] "GET / HTTP/1.1" 200 -
-2025-06-12 23:36:40,507 INFO: 127.0.0.1 - - [12/Jun/2025 23:36:40] "GET / HTTP/1.1" 200 -
-2025-06-13 00:08:39,774 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-06-13 23:45:03,029 INFO: [33mPress CTRL+C to quit[0m
+2025-06-13 23:45:06,396 INFO: 127.0.0.1 - - [13/Jun/2025 23:45:06] "GET / HTTP/1.1" 200 -
+2025-06-13 23:45:12,749 INFO: 127.0.0.1 - - [13/Jun/2025 23:45:12] "GET / HTTP/1.1" 200 -
+2025-06-13 23:45:14,136 INFO: 127.0.0.1 - - [13/Jun/2025 23:45:14] "GET / HTTP/1.1" 200 -
+2025-06-13 23:45:15,157 INFO: 127.0.0.1 - - [13/Jun/2025 23:45:15] "GET / HTTP/1.1" 200 -
+2025-06-13 23:45:17,067 INFO: 127.0.0.1 - - [13/Jun/2025 23:45:17] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-06-13 23:45:20,420 INFO: 127.0.0.1 - - [13/Jun/2025 23:45:20] "GET / HTTP/1.1" 200 -
+2025-06-13 23:45:20,914 INFO: 127.0.0.1 - - [13/Jun/2025 23:45:20] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-06-13 23:47:36,726 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.1.6:5000
-2025-06-13 00:08:39,774 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 00:10:18,994 INFO: 127.0.0.1 - - [13/Jun/2025 00:10:18] "GET / HTTP/1.1" 200 -
-2025-06-13 00:12:53,898 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-06-13 23:47:36,726 INFO: [33mPress CTRL+C to quit[0m
+2025-06-13 23:47:42,167 INFO: 127.0.0.1 - - [13/Jun/2025 23:47:42] "GET / HTTP/1.1" 200 -
+2025-06-13 23:49:26,258 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.1.6:5000
-2025-06-13 00:12:53,898 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 00:13:05,581 INFO: 127.0.0.1 - - [13/Jun/2025 00:13:05] "GET / HTTP/1.1" 200 -
-2025-06-13 00:13:44,402 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 00:13:44,402 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 00:13:50,298 INFO: 127.0.0.1 - - [13/Jun/2025 00:13:50] "GET / HTTP/1.1" 200 -
-2025-06-13 00:14:12,163 INFO: 127.0.0.1 - - [13/Jun/2025 00:14:12] "GET /admin/add HTTP/1.1" 200 -
-2025-06-13 00:14:14,866 INFO: 127.0.0.1 - - [13/Jun/2025 00:14:14] "GET / HTTP/1.1" 200 -
-2025-06-13 00:19:05,985 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 00:19:05,985 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 00:19:11,404 INFO: 127.0.0.1 - - [13/Jun/2025 00:19:11] "GET / HTTP/1.1" 200 -
-2025-06-13 00:19:30,454 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 00:19:30,454 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 00:19:35,435 INFO: 127.0.0.1 - - [13/Jun/2025 00:19:35] "GET / HTTP/1.1" 200 -
-2025-06-13 00:20:37,124 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 00:20:37,124 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 00:20:41,114 INFO: 127.0.0.1 - - [13/Jun/2025 00:20:41] "GET / HTTP/1.1" 200 -
-2025-06-13 00:21:19,851 INFO: 127.0.0.1 - - [13/Jun/2025 00:21:19] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
-2025-06-13 00:21:20,332 INFO: 127.0.0.1 - - [13/Jun/2025 00:21:20] "GET / HTTP/1.1" 200 -
-2025-06-13 00:21:24,859 INFO: 127.0.0.1 - - [13/Jun/2025 00:21:24] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:21:27,376 INFO: 127.0.0.1 - - [13/Jun/2025 00:21:27] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
-2025-06-13 00:21:28,017 INFO: 127.0.0.1 - - [13/Jun/2025 00:21:28] "GET / HTTP/1.1" 200 -
-2025-06-13 00:21:30,132 INFO: 127.0.0.1 - - [13/Jun/2025 00:21:30] "GET /admin HTTP/1.1" 200 -
-2025-06-13 00:21:43,382 INFO: 127.0.0.1 - - [13/Jun/2025 00:21:43] "GET / HTTP/1.1" 200 -
-2025-06-13 00:22:15,505 INFO: 127.0.0.1 - - [13/Jun/2025 00:22:15] "GET /admin HTTP/1.1" 200 -
-2025-06-13 00:22:54,331 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 00:22:54,332 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 00:22:58,468 INFO: 127.0.0.1 - - [13/Jun/2025 00:22:58] "GET /admin HTTP/1.1" 200 -
-2025-06-13 00:23:14,942 INFO: 127.0.0.1 - - [13/Jun/2025 00:23:14] "GET /admin HTTP/1.1" 200 -
-2025-06-13 00:27:01,238 INFO: 127.0.0.1 - - [13/Jun/2025 00:27:01] "GET /change_password HTTP/1.1" 200 -
-2025-06-13 00:32:36,882 ERROR: Exception on /admin/users [GET]
+2025-06-13 23:49:26,259 INFO: [33mPress CTRL+C to quit[0m
+2025-06-13 23:49:30,857 INFO: 127.0.0.1 - - [13/Jun/2025 23:49:30] "GET / HTTP/1.1" 200 -
+2025-06-13 23:58:23,676 ERROR: Exception on / [GET]
 Traceback (most recent call last):
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
     self.dialect.do_execute(
@@ -856,41 +275,15 @@ Traceback (most recent call last):
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 284, in decorated_view
-    elif not current_user.is_authenticated:
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\local.py", line 318, in __get__
-    obj = instance._get_current_object()
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\local.py", line 526, in _get_current_object
-    return get_name(local())
-                    ^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 25, in <lambda>
-    current_user = LocalProxy(lambda: _get_user())
-                                      ^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 370, in _get_user
-    current_app.login_manager._load_user()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\login_manager.py", line 364, in _load_user
-    user = self._user_callback(user_id)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\__init__.py", line 54, in load_user
-    return User.query.get(int(user_id))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<string>", line 2, in get
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 386, in warned
-    return fn(*args, **kwargs)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1126, in get
-    return self._get_impl(ident, loading.load_on_pk_identity)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1135, in _get_impl
-    return self.session._get_impl(
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3873, in _get_impl
-    return db_load_fn(
-           ^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 694, in load_on_pk_identity
-    session.execute(
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 101, in index
+    farmeos = query.all()
+              ^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
     return self._execute_internal(
            ^^^^^^^^^^^^^^^^^^^^^^^
@@ -939,13 +332,11 @@ Traceback (most recent call last):
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
     raise err.OperationalError(
 sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
-[SQL: SELECT user.id AS user_id, user.username AS user_username, user.password_hash AS user_password_hash, user.`role` AS user_role 
-FROM user 
-WHERE user.id = %(pk_1)s]
-[parameters: {'pk_1': 1}]
+[SQL: SELECT farm.id AS farm_id, farm.nombre AS farm_nombre, farm.veces_realizadas AS farm_veces_realizadas, farm.ganancia AS farm_ganancia, farm.waypoint AS farm_waypoint, farm.duracion AS farm_duracion, farm.requerimientos AS farm_requerimientos, farm.profit_hr AS farm_profit_hr, farm.limitation AS farm_limitation 
+FROM farm]
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
-2025-06-13 00:32:36,891 INFO: 127.0.0.1 - - [13/Jun/2025 00:32:36] "[35m[1mGET /admin/users HTTP/1.1[0m" 500 -
-2025-06-13 00:32:36,904 ERROR: Error on request:
+2025-06-13 23:58:23,684 INFO: 127.0.0.1 - - [13/Jun/2025 23:58:23] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-13 23:58:23,736 ERROR: Error on request:
 Traceback (most recent call last):
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
     self.dialect.do_execute(
@@ -986,41 +377,15 @@ Traceback (most recent call last):
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 284, in decorated_view
-    elif not current_user.is_authenticated:
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\local.py", line 318, in __get__
-    obj = instance._get_current_object()
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\local.py", line 526, in _get_current_object
-    return get_name(local())
-                    ^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 25, in <lambda>
-    current_user = LocalProxy(lambda: _get_user())
-                                      ^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\utils.py", line 370, in _get_user
-    current_app.login_manager._load_user()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask_login\login_manager.py", line 364, in _load_user
-    user = self._user_callback(user_id)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\__init__.py", line 54, in load_user
-    return User.query.get(int(user_id))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<string>", line 2, in get
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 386, in warned
-    return fn(*args, **kwargs)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1126, in get
-    return self._get_impl(ident, loading.load_on_pk_identity)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1135, in _get_impl
-    return self.session._get_impl(
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3873, in _get_impl
-    return db_load_fn(
-           ^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 694, in load_on_pk_identity
-    session.execute(
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 101, in index
+    farmeos = query.all()
+              ^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
     return self._execute_internal(
            ^^^^^^^^^^^^^^^^^^^^^^^
@@ -1069,10 +434,8 @@ Traceback (most recent call last):
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
     raise err.OperationalError(
 sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
-[SQL: SELECT user.id AS user_id, user.username AS user_username, user.password_hash AS user_password_hash, user.`role` AS user_role 
-FROM user 
-WHERE user.id = %(pk_1)s]
-[parameters: {'pk_1': 1}]
+[SQL: SELECT farm.id AS farm_id, farm.nombre AS farm_nombre, farm.veces_realizadas AS farm_veces_realizadas, farm.ganancia AS farm_ganancia, farm.waypoint AS farm_waypoint, farm.duracion AS farm_duracion, farm.requerimientos AS farm_requerimientos, farm.profit_hr AS farm_profit_hr, farm.limitation AS farm_limitation 
+FROM farm]
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
 
 During handling of the above exception, another exception occurred:
@@ -1092,7 +455,7 @@ Traceback (most recent call last):
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 860, in handle_exception
     server_error = self.ensure_sync(handler)(server_error)
                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 418, in server_error
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 415, in server_error
     return render_template('500.html'), 500
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
@@ -1155,1354 +518,17 @@ Traceback (most recent call last):
   File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 665, in _invalid_transaction
     raise exc.PendingRollbackError(
 sqlalchemy.exc.PendingRollbackError: Can't reconnect until invalid transaction is rolled back.  Please rollback() fully before proceeding (Background on this error at: https://sqlalche.me/e/20/8s2b)
-2025-06-13 00:32:41,841 INFO: 127.0.0.1 - - [13/Jun/2025 00:32:41] "GET /admin/users HTTP/1.1" 200 -
-2025-06-13 00:32:48,029 INFO: 127.0.0.1 - - [13/Jun/2025 00:32:48] "GET /admin/add HTTP/1.1" 200 -
-2025-06-13 00:32:51,222 INFO: 127.0.0.1 - - [13/Jun/2025 00:32:51] "GET /admin/users HTTP/1.1" 200 -
-2025-06-13 00:32:52,698 INFO: 127.0.0.1 - - [13/Jun/2025 00:32:52] "GET /admin/create_user HTTP/1.1" 200 -
-2025-06-13 00:32:55,212 INFO: 127.0.0.1 - - [13/Jun/2025 00:32:55] "GET /admin HTTP/1.1" 200 -
-2025-06-13 00:32:57,268 INFO: 127.0.0.1 - - [13/Jun/2025 00:32:57] "GET / HTTP/1.1" 200 -
-2025-06-13 00:33:04,585 INFO: 127.0.0.1 - - [13/Jun/2025 00:33:04] "GET /admin HTTP/1.1" 200 -
-2025-06-13 00:33:06,145 INFO: 127.0.0.1 - - [13/Jun/2025 00:33:06] "GET /admin/users HTTP/1.1" 200 -
-2025-06-13 00:33:07,697 INFO: 127.0.0.1 - - [13/Jun/2025 00:33:07] "GET /admin/create_user HTTP/1.1" 200 -
-2025-06-13 00:33:09,784 INFO: 127.0.0.1 - - [13/Jun/2025 00:33:09] "GET /admin/add HTTP/1.1" 200 -
-2025-06-13 00:33:14,221 INFO: 127.0.0.1 - - [13/Jun/2025 00:33:14] "GET /change_password HTTP/1.1" 200 -
-2025-06-13 00:33:21,179 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-06-13 23:58:27,874 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.1.6:5000
-2025-06-13 00:33:21,179 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 00:33:25,854 INFO: 127.0.0.1 - - [13/Jun/2025 00:33:25] "GET /change_password HTTP/1.1" 200 -
-2025-06-13 00:37:03,818 INFO: 127.0.0.1 - - [13/Jun/2025 00:37:03] "GET /change_password HTTP/1.1" 200 -
-2025-06-13 00:37:07,277 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-06-13 23:58:27,875 INFO: [33mPress CTRL+C to quit[0m
+2025-06-13 23:58:30,882 INFO: 127.0.0.1 - - [13/Jun/2025 23:58:30] "GET / HTTP/1.1" 200 -
+2025-06-14 00:04:59,631 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.1.6:5000
-2025-06-13 00:37:07,277 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 00:37:10,092 INFO: 127.0.0.1 - - [13/Jun/2025 00:37:10] "GET /change_password HTTP/1.1" 200 -
-2025-06-13 00:38:18,100 INFO: 127.0.0.1 - - [13/Jun/2025 00:38:18] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
-2025-06-13 00:38:18,594 INFO: 127.0.0.1 - - [13/Jun/2025 00:38:18] "GET / HTTP/1.1" 200 -
-2025-06-13 00:38:21,006 INFO: 127.0.0.1 - - [13/Jun/2025 00:38:21] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:38:34,338 INFO: 127.0.0.1 - - [13/Jun/2025 00:38:34] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
-2025-06-13 00:38:34,974 INFO: 127.0.0.1 - - [13/Jun/2025 00:38:34] "GET / HTTP/1.1" 200 -
-2025-06-13 00:38:37,446 INFO: 127.0.0.1 - - [13/Jun/2025 00:38:37] "GET /change_password HTTP/1.1" 200 -
-2025-06-13 00:38:49,115 INFO: 127.0.0.1 - - [13/Jun/2025 00:38:49] "GET /admin/add HTTP/1.1" 200 -
-2025-06-13 00:38:56,438 INFO: 127.0.0.1 - - [13/Jun/2025 00:38:56] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
-2025-06-13 00:38:56,914 INFO: 127.0.0.1 - - [13/Jun/2025 00:38:56] "GET / HTTP/1.1" 200 -
-2025-06-13 00:39:06,916 INFO: 127.0.0.1 - - [13/Jun/2025 00:39:06] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:50:57,775 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 00:50:57,775 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 00:51:00,046 INFO: 127.0.0.1 - - [13/Jun/2025 00:51:00] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:51:28,083 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 00:51:28,083 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 00:51:28,401 INFO: 127.0.0.1 - - [13/Jun/2025 00:51:28] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:51:29,381 INFO: 127.0.0.1 - - [13/Jun/2025 00:51:29] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:51:29,812 INFO: 127.0.0.1 - - [13/Jun/2025 00:51:29] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:51:30,140 INFO: 127.0.0.1 - - [13/Jun/2025 00:51:30] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:51:41,570 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 00:51:41,570 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 00:51:42,034 INFO: 127.0.0.1 - - [13/Jun/2025 00:51:42] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:53:49,582 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 00:53:49,582 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 00:53:52,401 INFO: 127.0.0.1 - - [13/Jun/2025 00:53:52] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:54:36,684 INFO: 127.0.0.1 - - [13/Jun/2025 00:54:36] "[33mGET /auth/register HTTP/1.1[0m" 404 -
-2025-06-13 00:55:45,141 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 00:55:45,141 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 00:55:45,379 INFO: 127.0.0.1 - - [13/Jun/2025 00:55:45] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:55:46,701 INFO: 127.0.0.1 - - [13/Jun/2025 00:55:46] "GET /register HTTP/1.1" 200 -
-2025-06-13 00:56:16,511 INFO: 127.0.0.1 - - [13/Jun/2025 00:56:16] "[32mPOST /register HTTP/1.1[0m" 302 -
-2025-06-13 00:56:16,515 INFO: 127.0.0.1 - - [13/Jun/2025 00:56:16] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:56:23,709 INFO: 127.0.0.1 - - [13/Jun/2025 00:56:23] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
-2025-06-13 00:56:24,324 INFO: 127.0.0.1 - - [13/Jun/2025 00:56:24] "GET / HTTP/1.1" 200 -
-2025-06-13 00:56:29,311 INFO: 127.0.0.1 - - [13/Jun/2025 00:56:29] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
-2025-06-13 00:56:29,759 INFO: 127.0.0.1 - - [13/Jun/2025 00:56:29] "GET / HTTP/1.1" 200 -
-2025-06-13 00:56:34,070 INFO: 127.0.0.1 - - [13/Jun/2025 00:56:34] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:56:35,690 INFO: 127.0.0.1 - - [13/Jun/2025 00:56:35] "GET /register HTTP/1.1" 200 -
-2025-06-13 00:57:54,037 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 00:57:54,037 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 00:57:55,461 INFO: 127.0.0.1 - - [13/Jun/2025 00:57:55] "GET /register HTTP/1.1" 200 -
-2025-06-13 00:57:57,405 INFO: 127.0.0.1 - - [13/Jun/2025 00:57:57] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:57:58,584 INFO: 127.0.0.1 - - [13/Jun/2025 00:57:58] "GET /register HTTP/1.1" 200 -
-2025-06-13 00:57:59,754 INFO: 127.0.0.1 - - [13/Jun/2025 00:57:59] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:58:06,356 INFO: 127.0.0.1 - - [13/Jun/2025 00:58:06] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
-2025-06-13 00:58:06,934 INFO: 127.0.0.1 - - [13/Jun/2025 00:58:06] "GET / HTTP/1.1" 200 -
-2025-06-13 00:59:22,166 INFO: 127.0.0.1 - - [13/Jun/2025 00:59:22] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
-2025-06-13 00:59:22,586 INFO: 127.0.0.1 - - [13/Jun/2025 00:59:22] "GET / HTTP/1.1" 200 -
-2025-06-13 00:59:23,810 INFO: 127.0.0.1 - - [13/Jun/2025 00:59:23] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 00:59:25,155 INFO: 127.0.0.1 - - [13/Jun/2025 00:59:25] "GET /register HTTP/1.1" 200 -
-2025-06-13 00:59:29,420 INFO: 127.0.0.1 - - [13/Jun/2025 00:59:29] "POST /register HTTP/1.1" 200 -
-2025-06-13 00:59:34,057 INFO: 127.0.0.1 - - [13/Jun/2025 00:59:34] "POST /register HTTP/1.1" 200 -
-2025-06-13 00:59:38,302 INFO: 127.0.0.1 - - [13/Jun/2025 00:59:38] "POST /register HTTP/1.1" 200 -
-2025-06-13 00:59:40,997 INFO: 127.0.0.1 - - [13/Jun/2025 00:59:40] "POST /register HTTP/1.1" 200 -
-2025-06-13 01:04:44,140 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 01:04:44,141 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 01:04:45,539 INFO: 127.0.0.1 - - [13/Jun/2025 01:04:45] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 01:04:49,111 INFO: 127.0.0.1 - - [13/Jun/2025 01:04:49] "GET / HTTP/1.1" 200 -
-2025-06-13 01:04:50,427 INFO: 127.0.0.1 - - [13/Jun/2025 01:04:50] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 01:04:58,877 INFO: 127.0.0.1 - - [13/Jun/2025 01:04:58] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:05:00,231 INFO: 127.0.0.1 - - [13/Jun/2025 01:05:00] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 01:05:01,231 INFO: 127.0.0.1 - - [13/Jun/2025 01:05:01] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:05:02,099 INFO: 127.0.0.1 - - [13/Jun/2025 01:05:02] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 01:05:03,496 INFO: 127.0.0.1 - - [13/Jun/2025 01:05:03] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:05:04,083 INFO: 127.0.0.1 - - [13/Jun/2025 01:05:04] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 01:12:16,740 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 01:12:16,740 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 01:12:26,263 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:12:26,287 INFO: 127.0.0.1 - - [13/Jun/2025 01:12:26] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:12:36,103 INFO: 127.0.0.1 - - [13/Jun/2025 01:12:36] "GET / HTTP/1.1" 200 -
-2025-06-13 01:12:37,546 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:12:37,548 INFO: 127.0.0.1 - - [13/Jun/2025 01:12:37] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:12:39,494 INFO: 127.0.0.1 - - [13/Jun/2025 01:12:39] "GET / HTTP/1.1" 200 -
-2025-06-13 01:12:40,626 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:12:40,628 INFO: 127.0.0.1 - - [13/Jun/2025 01:12:40] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:12:56,414 INFO: 127.0.0.1 - - [13/Jun/2025 01:12:56] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:12:57,596 INFO: 127.0.0.1 - - [13/Jun/2025 01:12:57] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:12:59,240 INFO: 127.0.0.1 - - [13/Jun/2025 01:12:59] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:13:11,045 INFO: 127.0.0.1 - - [13/Jun/2025 01:13:11] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:13:11,701 INFO: 127.0.0.1 - - [13/Jun/2025 01:13:11] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:13:14,519 INFO: 127.0.0.1 - - [13/Jun/2025 01:13:14] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:13:16,546 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:13:16,547 INFO: 127.0.0.1 - - [13/Jun/2025 01:13:16] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:13:17,938 INFO: 127.0.0.1 - - [13/Jun/2025 01:13:17] "GET / HTTP/1.1" 200 -
-2025-06-13 01:13:22,364 INFO: 127.0.0.1 - - [13/Jun/2025 01:13:22] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:16:58,984 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 01:16:58,984 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 01:17:00,390 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 56, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:17:00,394 INFO: 127.0.0.1 - - [13/Jun/2025 01:17:00] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:17:03,977 INFO: 127.0.0.1 - - [13/Jun/2025 01:17:03] "GET / HTTP/1.1" 200 -
-2025-06-13 01:17:05,552 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 56, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:17:05,554 INFO: 127.0.0.1 - - [13/Jun/2025 01:17:05] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:17:07,246 INFO: 127.0.0.1 - - [13/Jun/2025 01:17:07] "GET / HTTP/1.1" 200 -
-2025-06-13 01:17:08,155 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 56, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:17:08,156 INFO: 127.0.0.1 - - [13/Jun/2025 01:17:08] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:17:09,676 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 56, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:17:09,678 INFO: 127.0.0.1 - - [13/Jun/2025 01:17:09] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:17:20,139 INFO: 127.0.0.1 - - [13/Jun/2025 01:17:20] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:18:33,392 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 01:18:33,392 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 01:18:48,878 INFO: 127.0.0.1 - - [13/Jun/2025 01:18:48] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:18:48,884 INFO: 127.0.0.1 - - [13/Jun/2025 01:18:48] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:18:51,947 INFO: 127.0.0.1 - - [13/Jun/2025 01:18:51] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:18:51,957 INFO: 127.0.0.1 - - [13/Jun/2025 01:18:51] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:18:53,385 INFO: 127.0.0.1 - - [13/Jun/2025 01:18:53] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:18:53,396 INFO: 127.0.0.1 - - [13/Jun/2025 01:18:53] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:19:02,716 INFO: 127.0.0.1 - - [13/Jun/2025 01:19:02] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:19:02,732 INFO: 127.0.0.1 - - [13/Jun/2025 01:19:02] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:19:46,895 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 01:19:46,895 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 01:19:50,288 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 56, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:19:50,291 INFO: 127.0.0.1 - - [13/Jun/2025 01:19:50] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:19:50,314 INFO: 127.0.0.1 - - [13/Jun/2025 01:19:50] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:19:54,149 INFO: 127.0.0.1 - - [13/Jun/2025 01:19:54] "GET / HTTP/1.1" 200 -
-2025-06-13 01:19:54,161 INFO: 127.0.0.1 - - [13/Jun/2025 01:19:54] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:20:16,379 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 01:20:16,379 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 01:20:19,769 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 56, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:20:19,772 INFO: 127.0.0.1 - - [13/Jun/2025 01:20:19] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:20:19,798 INFO: 127.0.0.1 - - [13/Jun/2025 01:20:19] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:25,099 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 01:22:25,100 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 01:22:36,501 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:36] "GET / HTTP/1.1" 200 -
-2025-06-13 01:22:36,517 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:36] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:37,829 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:37,832 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:37] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:37,856 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:37] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:44,213 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 01:22:44,213 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 01:22:45,563 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:45,566 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:45] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:45,578 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:45] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:46,836 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:46,837 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:46] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:46,850 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:46] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:47,320 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:47,322 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:47] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:47,332 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:47] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:47,948 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:47,949 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:47] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:47,959 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:47] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:48,396 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:48,398 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:48] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:48,408 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:48] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:48,840 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:48,841 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:48] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:48,858 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:48] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:49,221 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:49,222 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:49] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:49,233 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:49] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:49,604 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:49,606 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:49] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:49,616 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:49] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:49,996 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:49,997 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:49] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:50,008 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:50] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:50,300 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:50,302 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:50] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:50,313 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:50] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:55,673 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 01:22:55,673 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 01:22:56,891 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:56,894 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:56] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:56,905 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:56] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:57,500 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:57,501 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:57] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:57,513 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:57] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:57,900 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:57,901 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:57] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:57,913 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:57] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:58,350 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:58,351 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:58] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:58,360 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:58] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:22:58,844 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:22:58,846 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:58] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:22:58,857 INFO: 127.0.0.1 - - [13/Jun/2025 01:22:58] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:23:01,753 INFO: 127.0.0.1 - - [13/Jun/2025 01:23:01] "GET / HTTP/1.1" 200 -
-2025-06-13 01:23:01,770 INFO: 127.0.0.1 - - [13/Jun/2025 01:23:01] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:23:02,378 ERROR: Exception on /auth/login [GET]
-Traceback (most recent call last):
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 20, in login
-    return render_template('login.html')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\login.html", line 41, in top-level template code
-    <a href="{{ url_for('auth.forgot_password') }}" class="text-blue-600 hover:underline text-sm">¿Olvidaste tu contraseña?</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.forgot_password'. Did you mean 'main.change_password' instead?
-2025-06-13 01:23:02,380 INFO: 127.0.0.1 - - [13/Jun/2025 01:23:02] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
-2025-06-13 01:23:02,402 INFO: 127.0.0.1 - - [13/Jun/2025 01:23:02] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:23:20,507 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 01:23:20,507 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 01:23:25,151 INFO: 127.0.0.1 - - [13/Jun/2025 01:23:25] "GET / HTTP/1.1" 200 -
-2025-06-13 01:23:25,166 INFO: 127.0.0.1 - - [13/Jun/2025 01:23:25] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:23:25,701 INFO: 127.0.0.1 - - [13/Jun/2025 01:23:25] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 01:23:25,725 INFO: 127.0.0.1 - - [13/Jun/2025 01:23:25] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:25:23,181 INFO: 127.0.0.1 - - [13/Jun/2025 01:25:23] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:25:23,210 INFO: 127.0.0.1 - - [13/Jun/2025 01:25:23] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:25:27,172 INFO: 127.0.0.1 - - [13/Jun/2025 01:25:27] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:25:27,186 INFO: 127.0.0.1 - - [13/Jun/2025 01:25:27] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:25:40,771 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 01:25:40,771 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 01:25:41,066 INFO: 127.0.0.1 - - [13/Jun/2025 01:25:41] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:25:41,079 INFO: 127.0.0.1 - - [13/Jun/2025 01:25:41] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:27:15,719 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 01:27:15,719 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 01:27:19,208 INFO: 127.0.0.1 - - [13/Jun/2025 01:27:19] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 01:27:19,236 INFO: 127.0.0.1 - - [13/Jun/2025 01:27:19] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:27:24,839 INFO: 127.0.0.1 - - [13/Jun/2025 01:27:24] "POST /auth/login HTTP/1.1" 200 -
-2025-06-13 01:27:24,879 INFO: 127.0.0.1 - - [13/Jun/2025 01:27:24] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:27:28,241 INFO: 127.0.0.1 - - [13/Jun/2025 01:27:28] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:27:28,258 INFO: 127.0.0.1 - - [13/Jun/2025 01:27:28] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:27:29,690 INFO: 127.0.0.1 - - [13/Jun/2025 01:27:29] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 01:27:29,738 INFO: 127.0.0.1 - - [13/Jun/2025 01:27:29] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:27:31,129 INFO: 127.0.0.1 - - [13/Jun/2025 01:27:31] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:27:31,154 INFO: 127.0.0.1 - - [13/Jun/2025 01:27:31] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:27:32,953 INFO: 127.0.0.1 - - [13/Jun/2025 01:27:32] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 01:27:32,985 INFO: 127.0.0.1 - - [13/Jun/2025 01:27:32] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:27:35,178 INFO: 127.0.0.1 - - [13/Jun/2025 01:27:35] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:27:35,208 INFO: 127.0.0.1 - - [13/Jun/2025 01:27:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:28:02,052 INFO: 127.0.0.1 - - [13/Jun/2025 01:28:02] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:28:02,064 INFO: 127.0.0.1 - - [13/Jun/2025 01:28:02] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:29:22,847 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 01:29:22,848 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 01:29:23,890 INFO: 127.0.0.1 - - [13/Jun/2025 01:29:23] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:29:23,904 INFO: 127.0.0.1 - - [13/Jun/2025 01:29:23] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:29:25,733 INFO: 127.0.0.1 - - [13/Jun/2025 01:29:25] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:29:25,746 INFO: 127.0.0.1 - - [13/Jun/2025 01:29:25] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:29:26,909 INFO: 127.0.0.1 - - [13/Jun/2025 01:29:26] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 01:29:26,941 INFO: 127.0.0.1 - - [13/Jun/2025 01:29:26] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:29:27,990 INFO: 127.0.0.1 - - [13/Jun/2025 01:29:27] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:29:28,017 INFO: 127.0.0.1 - - [13/Jun/2025 01:29:28] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:30:21,873 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 01:30:21,873 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 01:30:22,379 INFO: 127.0.0.1 - - [13/Jun/2025 01:30:22] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:30:22,393 INFO: 127.0.0.1 - - [13/Jun/2025 01:30:22] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:30:23,431 INFO: 127.0.0.1 - - [13/Jun/2025 01:30:23] "GET /register HTTP/1.1" 200 -
-2025-06-13 01:30:23,441 INFO: 127.0.0.1 - - [13/Jun/2025 01:30:23] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:30:24,717 INFO: 127.0.0.1 - - [13/Jun/2025 01:30:24] "GET /auth/login HTTP/1.1" 200 -
-2025-06-13 01:30:24,743 INFO: 127.0.0.1 - - [13/Jun/2025 01:30:24] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:30:37,099 INFO: 127.0.0.1 - - [13/Jun/2025 01:30:37] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
-2025-06-13 01:30:37,724 INFO: 127.0.0.1 - - [13/Jun/2025 01:30:37] "GET / HTTP/1.1" 200 -
-2025-06-13 01:30:38,210 INFO: 127.0.0.1 - - [13/Jun/2025 01:30:38] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2025-06-13 01:30:44,307 INFO: 127.0.0.1 - - [13/Jun/2025 01:30:44] "GET /change_password HTTP/1.1" 200 -
-2025-06-13 01:31:20,025 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.6:5000
-2025-06-13 01:31:20,025 INFO: [33mPress CTRL+C to quit[0m
-2025-06-13 01:31:22,632 INFO: 127.0.0.1 - - [13/Jun/2025 01:31:22] "GET /change_password HTTP/1.1" 200 -
+2025-06-14 00:04:59,631 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 00:05:03,101 INFO: 127.0.0.1 - - [14/Jun/2025 00:05:03] "GET / HTTP/1.1" 200 -
+2025-06-14 00:05:38,797 INFO: 127.0.0.1 - - [14/Jun/2025 00:05:38] "GET /farms HTTP/1.1" 200 -
+2025-06-14 00:05:40,784 INFO: 127.0.0.1 - - [14/Jun/2025 00:05:40] "GET / HTTP/1.1" 200 -

@@ -154,7 +154,6 @@ def admin_panel():
             "nombre": farm.nombre,
             "veces_realizadas": farm.veces_realizadas,
             "ganancia_formateada": format_gsc(farm.ganancia),
-            "creado_por": farm.creado_por,
             "waypoint": farm.waypoint,
             "duracion": farm.duracion,
             "requerimientos": farm.requerimientos,
@@ -216,18 +215,16 @@ def add_farm():
                 nombre=nombre,
                 veces_realizadas=veces,
                 ganancia=ganancia,
-                creado_por=current_user.username,
                 waypoint=waypoint,
                 duracion=duracion,
                 requerimientos=requerimientos,
                 profit_hr=profit_hr,
-                limitation=limitation,
-                datasets=datasets
+                limitation=limitation
             )
-        db.session.add(nuevo_farm)
-        db.session.commit()
-        flash("Farmeo agregado correctamente.")
-        return redirect(url_for('main.admin_panel'))
+            db.session.add(nuevo_farm)
+            db.session.commit()
+            flash("Farmeo agregado correctamente.")
+            return redirect(url_for('main.admin_panel'))
         # Si hay errores, no guardar y mostrar en el formulario
     return render_template('add_farm.html', errors=errors)
 
@@ -430,3 +427,103 @@ def robots_txt():
         'Sitemap: ' + url_for('sitemap', _external=True)
     ]
     return '\n'.join(lines), 200, {'Content-Type': 'text/plain'}
+
+@main_bp.route('/farms')
+def farms():
+    # Filtros para la vista pública
+    query = Farm.query
+    filtro_nombre = request.args.get('nombre', '').strip()
+    if filtro_nombre:
+        query = query.filter(Farm.nombre.ilike(f"%{filtro_nombre}%"))
+    filtro_veces = request.args.get('veces_realizadas', '').strip()
+    if filtro_veces:
+        try:
+            filtro_veces = int(filtro_veces)
+            query = query.filter(Farm.veces_realizadas == filtro_veces)
+        except ValueError:
+            pass
+    ganancia_min = request.args.get('ganancia_min', '').strip()
+    if ganancia_min:
+        try:
+            ganancia_min = float(ganancia_min)
+            query = query.filter(Farm.ganancia >= ganancia_min)
+        except ValueError:
+            pass
+    ganancia_max = request.args.get('ganancia_max', '').strip()
+    if ganancia_max:
+        try:
+            ganancia_max = float(ganancia_max)
+            query = query.filter(Farm.ganancia <= ganancia_max)
+        except ValueError:
+            pass
+    filtro_waypoint = request.args.get('waypoint', '').strip()
+    if filtro_waypoint:
+        query = query.filter(Farm.waypoint.ilike(f"%{filtro_waypoint}%"))
+    filtro_duracion = request.args.get('duracion', '').strip()
+    if filtro_duracion:
+        query = query.filter(Farm.duracion == filtro_duracion)
+    filtro_requerimientos = request.args.get('requerimientos', '').strip()
+    if filtro_requerimientos:
+        query = query.filter(Farm.requerimientos.ilike(f"%{filtro_requerimientos}%"))
+    profit_hr_min = request.args.get('profit_hr_min', '').strip()
+    if profit_hr_min:
+        try:
+            profit_hr_min = float(profit_hr_min)
+            query = query.filter(Farm.profit_hr >= profit_hr_min)
+        except ValueError:
+            pass
+    profit_hr_max = request.args.get('profit_hr_max', '').strip()
+    if profit_hr_max:
+        try:
+            profit_hr_max = float(profit_hr_max)
+            query = query.filter(Farm.profit_hr <= profit_hr_max)
+        except ValueError:
+            pass
+    filtro_limitation = request.args.get('limitation', '').strip()
+    if filtro_limitation:
+        query = query.filter(Farm.limitation.ilike(f"%{filtro_limitation}%"))
+    sort = request.args.get('sort', '')
+    sort_map = {
+        'nombre': Farm.nombre,
+        'veces_realizadas': Farm.veces_realizadas,
+        'ganancia': Farm.ganancia,
+        'waypoint': Farm.waypoint,
+        'duracion': Farm.duracion,
+        'requerimientos': Farm.requerimientos,
+        'profit_hr': Farm.profit_hr,
+        'limitation': Farm.limitation
+    }
+    if sort:
+        for key in sort_map:
+            if sort.startswith(key):
+                direction = sort.split('_')[1] if '_' in sort else 'asc'
+                if direction == 'desc':
+                    query = query.order_by(sort_map[key].desc())
+                else:
+                    query = query.order_by(sort_map[key].asc())
+                break
+    farmeos = query.all()
+    farmeos_formateados = []
+    total_farmeos = len(farmeos)
+    suma_ganancias = sum(f.ganancia for f in farmeos)
+    for farm in farmeos:
+        farmeos_formateados.append({
+            "id": farm.id,
+            "nombre": farm.nombre,
+            "veces_realizadas": farm.veces_realizadas,
+            "ganancia_formateada": format_gsc(farm.ganancia),
+            "waypoint": farm.waypoint,
+            "duracion": farm.duracion,
+            "requerimientos": farm.requerimientos,
+            "profit_hr_formateado": format_gsc(farm.profit_hr) if farm.profit_hr is not None else '-',
+            "limitation": farm.limitation
+        })
+    return render_template('farms.html', 
+                         farmeos=farmeos_formateados, 
+                         total_farmeos=total_farmeos, 
+                         suma_ganancias=suma_ganancias,
+                         format_gsc=format_gsc)
+
+@main_bp.route('/about')
+def about():
+    return render_template('about.html')
