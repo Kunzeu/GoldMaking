@@ -532,3 +532,682 @@ sqlalchemy.exc.PendingRollbackError: Can't reconnect until invalid transaction i
 2025-06-14 00:05:03,101 INFO: 127.0.0.1 - - [14/Jun/2025 00:05:03] "GET / HTTP/1.1" 200 -
 2025-06-14 00:05:38,797 INFO: 127.0.0.1 - - [14/Jun/2025 00:05:38] "GET /farms HTTP/1.1" 200 -
 2025-06-14 00:05:40,784 INFO: 127.0.0.1 - - [14/Jun/2025 00:05:40] "GET / HTTP/1.1" 200 -
+2025-06-14 22:29:36,700 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:29:36,701 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:29:47,106 INFO: 127.0.0.1 - - [14/Jun/2025 22:29:47] "GET / HTTP/1.1" 200 -
+2025-06-14 22:29:47,737 INFO: 127.0.0.1 - - [14/Jun/2025 22:29:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-14 22:29:51,463 INFO: 127.0.0.1 - - [14/Jun/2025 22:29:51] "GET /farms HTTP/1.1" 200 -
+2025-06-14 22:30:53,889 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:30:53,889 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:30:57,091 INFO: 127.0.0.1 - - [14/Jun/2025 22:30:57] "GET /farms HTTP/1.1" 200 -
+2025-06-14 22:31:24,995 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:31:24,996 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:31:27,785 INFO: 127.0.0.1 - - [14/Jun/2025 22:31:27] "GET /farms HTTP/1.1" 200 -
+2025-06-14 22:34:19,017 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:34:19,017 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:34:23,013 INFO: 127.0.0.1 - - [14/Jun/2025 22:34:23] "GET /farms HTTP/1.1" 200 -
+2025-06-14 22:35:20,119 ERROR: Exception on /farmeo/6 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 420, in farmeo_detail
+    return render_template('farmeo_detail.html', farm=farm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\farmeo_detail.html", line 55, in top-level template code
+    <span class="font-semibold">Ganancia:</span> {{ format_gsc(farm.ganancia) }} \U0001fa99
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'format_gsc' is undefined
+2025-06-14 22:35:20,414 INFO: 127.0.0.1 - - [14/Jun/2025 22:35:20] "[35m[1mGET /farmeo/6 HTTP/1.1[0m" 500 -
+2025-06-14 22:35:49,172 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:35:49,172 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:35:52,728 INFO: 127.0.0.1 - - [14/Jun/2025 22:35:52] "GET /farms HTTP/1.1" 200 -
+2025-06-14 22:41:03,169 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:41:03,169 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:41:08,618 INFO: 127.0.0.1 - - [14/Jun/2025 22:41:08] "GET /farms HTTP/1.1" 200 -
+2025-06-14 22:41:12,363 INFO: 127.0.0.1 - - [14/Jun/2025 22:41:12] "GET /farms?nombre=&waypoint=&duracion=&profit_hr_min=&sort=id_asc HTTP/1.1" 200 -
+2025-06-14 22:41:14,385 INFO: 127.0.0.1 - - [14/Jun/2025 22:41:14] "GET /farms?nombre=&waypoint=&duracion=&profit_hr_min=&sort=id_desc HTTP/1.1" 200 -
+2025-06-14 22:41:17,924 INFO: 127.0.0.1 - - [14/Jun/2025 22:41:17] "GET /farms?nombre=&waypoint=&duracion=&profit_hr_min=&sort=duracion_desc HTTP/1.1" 200 -
+2025-06-14 22:41:19,858 INFO: 127.0.0.1 - - [14/Jun/2025 22:41:19] "GET /farms?nombre=&waypoint=&duracion=&profit_hr_min=&sort=id_desc HTTP/1.1" 200 -
+2025-06-14 22:41:33,442 INFO: 127.0.0.1 - - [14/Jun/2025 22:41:33] "GET /auth/login HTTP/1.1" 200 -
+2025-06-14 22:41:36,192 INFO: 127.0.0.1 - - [14/Jun/2025 22:41:36] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-06-14 22:41:36,806 INFO: 127.0.0.1 - - [14/Jun/2025 22:41:36] "GET / HTTP/1.1" 200 -
+2025-06-14 22:41:58,585 INFO: 127.0.0.1 - - [14/Jun/2025 22:41:58] "GET /farms HTTP/1.1" 200 -
+2025-06-14 22:43:53,591 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:43:53,591 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:43:56,553 ERROR: Exception on /farms [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 561, in farms
+    return render_template('farms.html',
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\farms.html", line 31, in top-level template code
+    <a href="{{ url_for('main.daily_routine') }}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.daily_routine'. Did you mean 'main.about' instead?
+2025-06-14 22:43:56,890 INFO: 127.0.0.1 - - [14/Jun/2025 22:43:56] "[35m[1mGET /farms HTTP/1.1[0m" 500 -
+2025-06-14 22:43:59,302 INFO: 127.0.0.1 - - [14/Jun/2025 22:43:59] "GET / HTTP/1.1" 200 -
+2025-06-14 22:44:00,626 ERROR: Exception on /farms [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 561, in farms
+    return render_template('farms.html',
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\farms.html", line 31, in top-level template code
+    <a href="{{ url_for('main.daily_routine') }}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.daily_routine'. Did you mean 'main.about' instead?
+2025-06-14 22:44:00,920 INFO: 127.0.0.1 - - [14/Jun/2025 22:44:00] "[35m[1mGET /farms HTTP/1.1[0m" 500 -
+2025-06-14 22:44:40,813 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:44:40,813 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:44:45,346 ERROR: Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 120, in index
+    return render_template('index.html', farmeos=farmeos_formateados, total_farmeos=total_farmeos, suma_ganancias=suma_ganancias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\index.html", line 32, in top-level template code
+    <a href="{{ url_for('main.daily_routine') }}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.daily_routine'. Did you mean 'main.about' instead?
+2025-06-14 22:44:45,628 INFO: 127.0.0.1 - - [14/Jun/2025 22:44:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-14 22:45:01,757 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:45:01,757 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:45:04,933 ERROR: Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 120, in index
+    return render_template('index.html', farmeos=farmeos_formateados, total_farmeos=total_farmeos, suma_ganancias=suma_ganancias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\index.html", line 32, in top-level template code
+    <a href="{{ url_for('main.daily_routine') }}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.daily_routine'. Did you mean 'main.about' instead?
+2025-06-14 22:45:05,229 INFO: 127.0.0.1 - - [14/Jun/2025 22:45:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-14 22:45:27,197 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:45:27,197 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:45:30,670 INFO: 127.0.0.1 - - [14/Jun/2025 22:45:30] "GET / HTTP/1.1" 200 -
+2025-06-14 22:46:33,107 INFO: 127.0.0.1 - - [14/Jun/2025 22:46:33] "GET /farms HTTP/1.1" 200 -
+2025-06-14 22:47:22,836 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:47:22,836 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:47:26,209 INFO: 127.0.0.1 - - [14/Jun/2025 22:47:26] "GET /farms HTTP/1.1" 200 -
+2025-06-14 22:47:28,261 INFO: 127.0.0.1 - - [14/Jun/2025 22:47:28] "GET / HTTP/1.1" 200 -
+2025-06-14 22:47:30,446 INFO: 127.0.0.1 - - [14/Jun/2025 22:47:30] "GET / HTTP/1.1" 200 -
+2025-06-14 22:47:38,670 INFO: 127.0.0.1 - - [14/Jun/2025 22:47:38] "GET / HTTP/1.1" 200 -
+2025-06-14 22:47:42,545 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:47:42,546 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:47:46,220 INFO: 127.0.0.1 - - [14/Jun/2025 22:47:46] "GET / HTTP/1.1" 200 -
+2025-06-14 22:48:13,369 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:48:13,369 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:48:16,295 ERROR: Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 120, in index
+    return render_template('index.html', farmeos=farmeos_formateados, total_farmeos=total_farmeos, suma_ganancias=suma_ganancias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\index.html", line 32, in top-level template code
+    <a href="{{ url_for('main.daily_routine') }}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.daily_routine'. Did you mean 'main.about' instead?
+2025-06-14 22:48:16,595 INFO: 127.0.0.1 - - [14/Jun/2025 22:48:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-14 22:49:07,910 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:49:07,910 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:49:11,066 ERROR: Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 120, in index
+    return render_template('index.html', farmeos=farmeos_formateados, total_farmeos=total_farmeos, suma_ganancias=suma_ganancias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\index.html", line 32, in top-level template code
+    <a href="{{ url_for('main.daily_routine') }}" @click="if(window.innerWidth<768){sidebarOpen=false}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.daily_routine'. Did you mean 'main.about' instead?
+2025-06-14 22:49:11,364 INFO: 127.0.0.1 - - [14/Jun/2025 22:49:11] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-14 22:49:51,502 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:49:51,502 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:49:54,911 ERROR: Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 120, in index
+    return render_template('index.html', farmeos=farmeos_formateados, total_farmeos=total_farmeos, suma_ganancias=suma_ganancias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\index.html", line 32, in top-level template code
+    <a href="{{ url_for('main.daily_routine') }}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.daily_routine'. Did you mean 'main.about' instead?
+2025-06-14 22:49:55,216 INFO: 127.0.0.1 - - [14/Jun/2025 22:49:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-14 22:50:05,739 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:50:05,739 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:50:09,677 ERROR: Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 120, in index
+    return render_template('index.html', farmeos=farmeos_formateados, total_farmeos=total_farmeos, suma_ganancias=suma_ganancias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\index.html", line 32, in top-level template code
+    <a href="{{ url_for('main.daily_routine') }}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.daily_routine'. Did you mean 'main.about' instead?
+2025-06-14 22:50:09,957 INFO: 127.0.0.1 - - [14/Jun/2025 22:50:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-14 22:50:23,303 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:50:23,303 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:50:26,740 INFO: 127.0.0.1 - - [14/Jun/2025 22:50:26] "GET / HTTP/1.1" 200 -
+2025-06-14 22:51:26,586 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:51:26,586 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:51:31,116 ERROR: Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 120, in index
+    return render_template('index.html', farmeos=farmeos_formateados, total_farmeos=total_farmeos, suma_ganancias=suma_ganancias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\index.html", line 32, in top-level template code
+    <a href="{{ url_for('main.daily_routine') }}" @click="if(window.innerWidth<768){sidebarOpen=false}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.daily_routine'. Did you mean 'main.about' instead?
+2025-06-14 22:51:31,435 INFO: 127.0.0.1 - - [14/Jun/2025 22:51:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-14 22:53:38,594 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:53:38,594 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:53:42,613 INFO: 127.0.0.1 - - [14/Jun/2025 22:53:42] "GET / HTTP/1.1" 200 -
+2025-06-14 22:53:46,563 ERROR: Exception on /daily-routine [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 584, in daily_routine
+    return render_template('daily_routine.html', farmeos=farmeos_formateados)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\daily_routine.html", line 27, in top-level template code
+    <form method="POST" action="{{ url_for('main.set_daily_routine') }}" class="bg-white/10 backdrop-blur-lg rounded-lg p-6">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.set_daily_routine'. Did you mean 'main.daily_routine' instead?
+2025-06-14 22:53:46,860 INFO: 127.0.0.1 - - [14/Jun/2025 22:53:46] "[35m[1mGET /daily-routine HTTP/1.1[0m" 500 -
+2025-06-14 22:55:57,227 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:55:57,227 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:56:01,635 ERROR: Exception on /daily-routine [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 584, in daily_routine
+    return render_template('daily_routine.html', farmeos=farmeos_formateados)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\daily_routine.html", line 27, in top-level template code
+    <form method="POST" action="{{ url_for('main.set_daily_routine') }}" class="bg-white/10 backdrop-blur-lg rounded-lg p-6">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.set_daily_routine'. Did you mean 'main.daily_routine' instead?
+2025-06-14 22:56:01,933 INFO: 127.0.0.1 - - [14/Jun/2025 22:56:01] "[35m[1mGET /daily-routine HTTP/1.1[0m" 500 -
+2025-06-14 22:59:02,272 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 22:59:02,272 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 22:59:06,100 ERROR: Exception on /daily-routine [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 586, in daily_routine
+    return render_template('daily_routine.html', farmeos=farmeos_formateados)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\templates\daily_routine.html", line 27, in top-level template code
+    <form method="POST" action="{{ url_for('main.set_daily_routine') }}" class="bg-white/10 backdrop-blur-lg rounded-lg p-6">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.set_daily_routine'. Did you mean 'main.daily_routine' instead?
+2025-06-14 22:59:06,394 INFO: 127.0.0.1 - - [14/Jun/2025 22:59:06] "[35m[1mGET /daily-routine HTTP/1.1[0m" 500 -
+2025-06-14 23:02:56,431 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 23:02:56,432 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 23:03:01,130 INFO: 127.0.0.1 - - [14/Jun/2025 23:03:01] "GET /daily-routine HTTP/1.1" 200 -
+2025-06-14 23:03:07,917 INFO: 127.0.0.1 - - [14/Jun/2025 23:03:07] "[32mPOST /set-daily-routine HTTP/1.1[0m" 302 -
+2025-06-14 23:03:08,487 INFO: 127.0.0.1 - - [14/Jun/2025 23:03:08] "GET /daily-routine HTTP/1.1" 200 -
+2025-06-14 23:03:10,802 INFO: 127.0.0.1 - - [14/Jun/2025 23:03:10] "GET /daily-routine HTTP/1.1" 200 -
+2025-06-14 23:03:12,563 INFO: 127.0.0.1 - - [14/Jun/2025 23:03:12] "GET / HTTP/1.1" 200 -
+2025-06-14 23:03:18,128 INFO: 127.0.0.1 - - [14/Jun/2025 23:03:18] "GET /farms HTTP/1.1" 200 -
+2025-06-14 23:03:22,185 INFO: 127.0.0.1 - - [14/Jun/2025 23:03:22] "GET / HTTP/1.1" 200 -
+2025-06-14 23:03:23,718 INFO: 127.0.0.1 - - [14/Jun/2025 23:03:23] "GET /farms HTTP/1.1" 200 -
+2025-06-14 23:03:25,107 INFO: 127.0.0.1 - - [14/Jun/2025 23:03:25] "GET / HTTP/1.1" 200 -
+2025-06-14 23:03:26,811 INFO: 127.0.0.1 - - [14/Jun/2025 23:03:26] "GET /farms HTTP/1.1" 200 -
+2025-06-14 23:03:29,499 INFO: 127.0.0.1 - - [14/Jun/2025 23:03:29] "GET /admin HTTP/1.1" 200 -
+2025-06-14 23:03:30,819 INFO: 127.0.0.1 - - [14/Jun/2025 23:03:30] "GET / HTTP/1.1" 200 -
+2025-06-14 23:03:43,819 INFO: 127.0.0.1 - - [14/Jun/2025 23:03:43] "GET /farms HTTP/1.1" 200 -
+2025-06-14 23:04:42,955 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 23:04:42,956 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 23:04:46,664 INFO: 127.0.0.1 - - [14/Jun/2025 23:04:46] "GET /farms HTTP/1.1" 200 -
+2025-06-14 23:04:47,939 INFO: 127.0.0.1 - - [14/Jun/2025 23:04:47] "GET /daily-routine HTTP/1.1" 200 -
+2025-06-14 23:06:27,434 INFO: 127.0.0.1 - - [14/Jun/2025 23:06:27] "[32mPOST /set-daily-routine HTTP/1.1[0m" 302 -
+2025-06-14 23:06:28,028 INFO: 127.0.0.1 - - [14/Jun/2025 23:06:28] "GET /daily-routine HTTP/1.1" 200 -
+2025-06-14 23:06:31,871 INFO: 127.0.0.1 - - [14/Jun/2025 23:06:31] "GET /daily-routine HTTP/1.1" 200 -
+2025-06-14 23:06:33,320 INFO: 127.0.0.1 - - [14/Jun/2025 23:06:33] "GET /farms HTTP/1.1" 200 -
+2025-06-14 23:06:37,597 INFO: 127.0.0.1 - - [14/Jun/2025 23:06:37] "GET / HTTP/1.1" 200 -
+2025-06-14 23:06:41,234 INFO: 127.0.0.1 - - [14/Jun/2025 23:06:41] "GET /admin/create_user HTTP/1.1" 200 -
+2025-06-14 23:06:43,561 INFO: 127.0.0.1 - - [14/Jun/2025 23:06:43] "GET /farms HTTP/1.1" 200 -
+2025-06-14 23:06:45,576 INFO: 127.0.0.1 - - [14/Jun/2025 23:06:45] "GET /daily-routine HTTP/1.1" 200 -

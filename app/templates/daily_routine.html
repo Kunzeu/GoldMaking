@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Routine | Gold Making</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900 font-sans text-lg text-gray-900 flex">
+    <aside class="h-full flex flex-col bg-gray-900/90 text-white shadow-lg z-50 fixed left-0 top-0 w-56">
+        <div class="flex items-center justify-between px-4 py-4 border-b border-gray-800">
+            <span class="flex items-center gap-2">
+                <svg class="w-7 h-7 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="10" stroke-width="2" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h8m-4-4v8" /></svg>
+                <span class="font-bold text-yellow-400 text-xl tracking-tight">Gold <span class="text-white">Making</span></span>
+            </span>
+        </div>
+        <nav class="flex-1 py-4 flex flex-col gap-2">
+            <a href="{{ url_for('main.index') }}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">Inicio</a>
+            <a href="{{ url_for('main.farms') }}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">Farms</a>
+            <a href="{{ url_for('main.daily_routine') }}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">Daily Routine</a>
+            <a href="{{ url_for('main.about') }}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">Acerca de</a>
+        </nav>
+    </aside>
+    <div class="ml-56 flex-1 transition-all duration-300">
+        <div class="p-8">
+            <h1 class="text-3xl font-bold text-white mb-6">Set Daily Routine</h1>
+            <form method="POST" action="{{ url_for('main.set_daily_routine') }}" class="bg-white/10 backdrop-blur-lg rounded-lg p-6">
+                <div class="mb-4 text-white font-semibold">Select the farms to include in the daily routine:</div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {% for farm in farmeos %}
+                    <label class="flex items-center bg-gray-800/60 rounded p-4 cursor-pointer hover:bg-indigo-800 transition-all">
+                        <input type="checkbox" name="farm_ids" value="{{ farm.id }}" class="mr-3 h-5 w-5 text-indigo-600 rounded">
+                        <div>
+                            <div class="font-bold text-yellow-400">{{ farm.nombre }}</div>
+                            <div class="text-gray-300 text-sm">Duración: {{ farm.duracion }} | Ganancia: {{ farm.ganancia_formateada }}</div>
+                        </div>
+                    </label>
+                    {% endfor %}
+                </div>
+                <div class="mt-6 flex justify-end">
+                    <button type="submit" class="px-6 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition-colors font-bold">Save Routine</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html> 

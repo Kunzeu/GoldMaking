@@ -49,6 +49,10 @@
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
                     <span x-show="sidebarOpen" class="transition-all">Añadir Farmeo</span>
                 </a>
+                <a href="{{ url_for('main.daily_routine') }}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+                    <span x-show="sidebarOpen" class="transition-all">Daily Routine</span>
+                </a>
             {% elif current_user.is_authenticated and current_user.role == 'editor' %}
                 <a href="{{ url_for('main.add_farm') }}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
@@ -81,34 +85,43 @@
 
     <!-- Contenido principal -->
     <div class="ml-56 flex-1 transition-all duration-300">
-        <div class="p-8">
-            <!-- Hero Section -->
-            <div class="text-center mb-12">
-                <h1 class="text-4xl font-bold text-white mb-4">Métodos de Farmeo</h1>
-                <p class="text-gray-300 text-lg">Descubre los métodos más rentables para hacer oro en Guild Wars 2</p>
-            </div>
-
+        <div class="p-4">
             <!-- Filtros -->
-            <div class="bg-white/10 backdrop-blur-lg rounded-lg p-6 mb-8">
-                <form method="GET" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="sticky top-0 bg-white/10 backdrop-blur-lg rounded-lg p-3 mb-4 shadow-lg z-10">
+                <form method="GET" class="grid grid-cols-2 md:grid-cols-4 gap-2 items-end">
                     <div>
-                        <label class="block text-white mb-2">Nombre</label>
-                        <input type="text" name="nombre" value="{{ request.args.get('nombre', '') }}" class="w-full px-4 py-2 rounded bg-gray-800 text-white border border-gray-700 focus:border-indigo-500 focus:outline-none">
+                        <label class="block text-white text-sm mb-1">Nombre</label>
+                        <input type="text" name="nombre" value="{{ request.args.get('nombre', '') }}" class="w-full px-2 py-1 text-sm rounded bg-gray-800 text-white border border-gray-700 focus:border-indigo-500 focus:outline-none">
                     </div>
                     <div>
-                        <label class="block text-white mb-2">Mapa</label>
-                        <input type="text" name="waypoint" value="{{ request.args.get('waypoint', '') }}" class="w-full px-4 py-2 rounded bg-gray-800 text-white border border-gray-700 focus:border-indigo-500 focus:outline-none">
+                        <label class="block text-white text-sm mb-1">Mapa</label>
+                        <input type="text" name="waypoint" value="{{ request.args.get('waypoint', '') }}" class="w-full px-2 py-1 text-sm rounded bg-gray-800 text-white border border-gray-700 focus:border-indigo-500 focus:outline-none">
                     </div>
                     <div>
-                        <label class="block text-white mb-2">Duración</label>
-                        <input type="text" name="duracion" value="{{ request.args.get('duracion', '') }}" class="w-full px-4 py-2 rounded bg-gray-800 text-white border border-gray-700 focus:border-indigo-500 focus:outline-none">
+                        <label class="block text-white text-sm mb-1">Duración</label>
+                        <input type="text" name="duracion" value="{{ request.args.get('duracion', '') }}" class="w-full px-2 py-1 text-sm rounded bg-gray-800 text-white border border-gray-700 focus:border-indigo-500 focus:outline-none">
                     </div>
                     <div>
-                        <label class="block text-white mb-2">Ganancia Mínima (g/h)</label>
-                        <input type="number" name="profit_hr_min" value="{{ request.args.get('profit_hr_min', '') }}" class="w-full px-4 py-2 rounded bg-gray-800 text-white border border-gray-700 focus:border-indigo-500 focus:outline-none">
+                        <label class="block text-white text-sm mb-1">G/h Mín</label>
+                        <input type="number" name="profit_hr_min" value="{{ request.args.get('profit_hr_min', '') }}" class="w-full px-2 py-1 text-sm rounded bg-gray-800 text-white border border-gray-700 focus:border-indigo-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-white text-sm mb-1">Ordenar por</label>
+                        <select name="sort" class="w-full px-2 py-1 text-sm rounded bg-gray-800 text-white border border-gray-700 focus:border-indigo-500 focus:outline-none" onchange="this.form.submit()">
+                            <option value="id_desc" {% if request.args.get('sort', 'id_desc') == 'id_desc' %}selected{% endif %}>Más nuevos primero</option>
+                            <option value="id_asc" {% if request.args.get('sort') == 'id_asc' %}selected{% endif %}>Más antiguos primero</option>
+                            <option value="nombre_asc" {% if request.args.get('sort') == 'nombre_asc' %}selected{% endif %}>Nombre (A-Z)</option>
+                            <option value="nombre_desc" {% if request.args.get('sort') == 'nombre_desc' %}selected{% endif %}>Nombre (Z-A)</option>
+                            <option value="ganancia_desc" {% if request.args.get('sort') == 'ganancia_desc' %}selected{% endif %}>Ganancia (mayor a menor)</option>
+                            <option value="ganancia_asc" {% if request.args.get('sort') == 'ganancia_asc' %}selected{% endif %}>Ganancia (menor a mayor)</option>
+                            <option value="profit_hr_desc" {% if request.args.get('sort') == 'profit_hr_desc' %}selected{% endif %}>G/h (mayor a menor)</option>
+                            <option value="profit_hr_asc" {% if request.args.get('sort') == 'profit_hr_asc' %}selected{% endif %}>G/h (menor a mayor)</option>
+                            <option value="duracion_asc" {% if request.args.get('sort') == 'duracion_asc' %}selected{% endif %}>Duración (corta a larga)</option>
+                            <option value="duracion_desc" {% if request.args.get('sort') == 'duracion_desc' %}selected{% endif %}>Duración (larga a corta)</option>
+                        </select>
                     </div>
                     <div class="col-span-full flex justify-end">
-                        <button type="submit" class="px-6 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition-colors">
+                        <button type="submit" class="px-4 py-1 text-sm bg-indigo-600 text-white rounded hover:bg-indigo-700 transition-colors">
                             Filtrar
                         </button>
                     </div>

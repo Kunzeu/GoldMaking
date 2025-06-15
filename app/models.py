@@ -19,6 +19,11 @@ class User(UserMixin, db.Model):
     password_hash = db.Column(db.String(200), nullable=False)
     role = db.Column(db.String(20), default='admin')  # 'admin', 'editor', 'user'
 
+class DailyRoutine(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    farm_id = db.Column(db.Integer, db.ForeignKey('farm.id'), nullable=False)
+    orden = db.Column(db.Integer, default=0)
+
     # Propiedad para password: se evita acceso directo y se usa para setear hash
     @property
     def password(self):

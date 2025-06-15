@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify, make_response
 from . import db
-from .models import Farm, User
+from .models import Farm, User, DailyRoutine
 from flask_login import login_required, current_user
 from werkzeug.security import check_password_hash
 import re
@@ -87,7 +87,8 @@ def index():
         'duracion': Farm.duracion,
         'requerimientos': Farm.requerimientos,
         'profit_hr': Farm.profit_hr,
-        'limitation': Farm.limitation
+        'limitation': Farm.limitation,
+        'id': Farm.id
     }
     if sort:
         for key in sort_map:
@@ -98,6 +99,9 @@ def index():
                 else:
                     query = query.order_by(sort_map[key].asc())
                 break
+    else:
+        # Por defecto, mostrar los más nuevos primero
+        query = query.order_by(Farm.id.desc())
     farmeos = query.all()
     farmeos_formateados = []
     total_farmeos = len(farmeos)
@@ -491,7 +495,8 @@ def farms():
         'duracion': Farm.duracion,
         'requerimientos': Farm.requerimientos,
         'profit_hr': Farm.profit_hr,
-        'limitation': Farm.limitation
+        'limitation': Farm.limitation,
+        'id': Farm.id
     }
     if sort:
         for key in sort_map:
@@ -502,10 +507,45 @@ def farms():
                 else:
                     query = query.order_by(sort_map[key].asc())
                 break
+    else:
+        # Por defecto, mostrar los más nuevos primero
+        query = query.order_by(Farm.id.desc())
     farmeos = query.all()
     farmeos_formateados = []
     total_farmeos = len(farmeos)
     suma_ganancias = sum(f.ganancia for f in farmeos)
+
+    # Calcular rutina diaria recomendada (2 horas)
+    # Ordenar por profit_hr descendente
+    farmeos_ordenados = sorted(farmeos, key=lambda f: f.profit_hr or 0, reverse=True)
+    rutina = []
+    tiempo_total = 0.0  # en horas
+    ganancia_rutina = 0.0
+    for farm in farmeos_ordenados:
+        # Convertir duración a horas
+        if farm.duracion:
+            partes = farm.duracion.split(":")
+            if len(partes) == 3:
+                h, m, s = map(int, partes)
+                duracion_horas = h + m/60 + s/3600
+            else:
+                duracion_horas = 0
+        else:
+            duracion_horas = 0
+        if tiempo_total + duracion_horas > 2:
+            break
+        rutina.append({
+            "nombre": farm.nombre,
+            "ganancia_formateada": format_gsc(farm.ganancia),
+            "waypoint": farm.waypoint,
+            "duracion": farm.duracion,
+            "requerimientos": farm.requerimientos,
+            "profit_hr_formateado": format_gsc(farm.profit_hr) if farm.profit_hr is not None else '-',
+            "limitation": farm.limitation
+        })
+        tiempo_total += duracion_horas
+        ganancia_rutina += farm.ganancia
+
     for farm in farmeos:
         farmeos_formateados.append({
             "id": farm.id,
@@ -522,8 +562,39 @@ def farms():
                          farmeos=farmeos_formateados, 
                          total_farmeos=total_farmeos, 
                          suma_ganancias=suma_ganancias,
+                         rutina=rutina,
+                         ganancia_rutina=ganancia_rutina,
                          format_gsc=format_gsc)
 
 @main_bp.route('/about')
 def about():
     return render_template('about.html')
+
+@main_bp.route('/daily-routine')
+def daily_routine():
+    farmeos = Farm.query.all()
+    farmeos_formateados = []
+    for farm in farmeos:
+        ganancia = farm.ganancia if farm.ganancia is not None else 0
+        duracion = farm.duracion if farm.duracion else "-"
+        farmeos_formateados.append({
+            "id": farm.id,
+            "nombre": farm.nombre,
+            "ganancia_formateada": format_gsc(ganancia),
+            "duracion": duracion
+        })
+    return render_template('daily_routine.html', farmeos=farmeos_formateados)
+
+@main_bp.route('/set-daily-routine', methods=['POST'])
+def set_daily_routine():
+    # Borrar rutina anterior
+    DailyRoutine.query.delete()
+    db.session.commit()
+    # Guardar nueva rutina
+    farm_ids = request.form.getlist('farm_ids')
+    for orden, farm_id in enumerate(farm_ids):
+        dr = DailyRoutine(farm_id=int(farm_id), orden=orden)
+        db.session.add(dr)
+    db.session.commit()
+    flash("Rutina diaria actualizada correctamente.", "success")
+    return redirect(url_for('main.daily_routine'))
