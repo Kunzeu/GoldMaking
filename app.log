@@ -1211,3 +1211,70 @@ werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.s
 2025-06-14 23:06:41,234 INFO: 127.0.0.1 - - [14/Jun/2025 23:06:41] "GET /admin/create_user HTTP/1.1" 200 -
 2025-06-14 23:06:43,561 INFO: 127.0.0.1 - - [14/Jun/2025 23:06:43] "GET /farms HTTP/1.1" 200 -
 2025-06-14 23:06:45,576 INFO: 127.0.0.1 - - [14/Jun/2025 23:06:45] "GET /daily-routine HTTP/1.1" 200 -
+2025-06-14 23:10:36,006 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 23:10:36,006 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 23:10:40,732 INFO: 127.0.0.1 - - [14/Jun/2025 23:10:40] "GET /daily-routine HTTP/1.1" 200 -
+2025-06-14 23:12:07,393 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 23:12:07,393 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 23:12:10,645 INFO: 127.0.0.1 - - [14/Jun/2025 23:12:10] "GET /daily-routine HTTP/1.1" 200 -
+2025-06-14 23:12:13,173 INFO: 127.0.0.1 - - [14/Jun/2025 23:12:13] "GET / HTTP/1.1" 200 -
+2025-06-14 23:12:16,444 INFO: 127.0.0.1 - - [14/Jun/2025 23:12:16] "GET /daily-routine HTTP/1.1" 200 -
+2025-06-14 23:12:18,233 INFO: 127.0.0.1 - - [14/Jun/2025 23:12:18] "GET / HTTP/1.1" 200 -
+2025-06-14 23:12:19,378 INFO: 127.0.0.1 - - [14/Jun/2025 23:12:19] "GET /farms HTTP/1.1" 200 -
+2025-06-14 23:12:45,122 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 23:12:45,122 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 23:12:48,889 INFO: 127.0.0.1 - - [14/Jun/2025 23:12:48] "GET /about HTTP/1.1" 200 -
+2025-06-14 23:12:52,835 INFO: 127.0.0.1 - - [14/Jun/2025 23:12:52] "GET /farms HTTP/1.1" 200 -
+2025-06-14 23:12:55,496 INFO: 127.0.0.1 - - [14/Jun/2025 23:12:55] "GET /admin HTTP/1.1" 200 -
+2025-06-14 23:13:07,838 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 23:13:07,838 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 23:13:11,635 INFO: 127.0.0.1 - - [14/Jun/2025 23:13:11] "GET /daily-routine HTTP/1.1" 200 -
+2025-06-14 23:13:18,669 INFO: 127.0.0.1 - - [14/Jun/2025 23:13:18] "GET / HTTP/1.1" 200 -
+2025-06-14 23:13:20,523 INFO: 127.0.0.1 - - [14/Jun/2025 23:13:20] "GET /daily-routine HTTP/1.1" 200 -
+2025-06-14 23:13:43,115 INFO: 127.0.0.1 - - [14/Jun/2025 23:13:43] "GET /admin HTTP/1.1" 200 -
+2025-06-14 23:13:45,217 INFO: 127.0.0.1 - - [14/Jun/2025 23:13:45] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-06-14 23:14:14,615 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 23:14:14,616 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 23:14:17,597 INFO: 127.0.0.1 - - [14/Jun/2025 23:14:17] "GET /admin HTTP/1.1" 200 -
+2025-06-14 23:15:44,375 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 23:15:44,376 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 23:15:47,971 INFO: 127.0.0.1 - - [14/Jun/2025 23:15:47] "GET /admin HTTP/1.1" 200 -
+2025-06-14 23:15:49,714 INFO: 127.0.0.1 - - [14/Jun/2025 23:15:49] "GET / HTTP/1.1" 200 -
+2025-06-14 23:15:55,264 INFO: 127.0.0.1 - - [14/Jun/2025 23:15:55] "GET /farms HTTP/1.1" 200 -
+2025-06-14 23:15:56,828 INFO: 127.0.0.1 - - [14/Jun/2025 23:15:56] "GET /daily-routine HTTP/1.1" 200 -
+2025-06-14 23:15:58,600 INFO: 127.0.0.1 - - [14/Jun/2025 23:15:58] "GET /about HTTP/1.1" 200 -
+2025-06-14 23:16:01,796 INFO: 127.0.0.1 - - [14/Jun/2025 23:16:01] "GET /admin HTTP/1.1" 200 -
+2025-06-14 23:18:27,950 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 23:18:27,950 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 23:18:31,214 INFO: 127.0.0.1 - - [14/Jun/2025 23:18:31] "GET /admin HTTP/1.1" 200 -
+2025-06-14 23:19:11,714 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 23:19:11,714 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 23:19:14,617 INFO: 127.0.0.1 - - [14/Jun/2025 23:19:14] "GET /admin HTTP/1.1" 200 -
+2025-06-14 23:19:16,820 INFO: 127.0.0.1 - - [14/Jun/2025 23:19:16] "GET / HTTP/1.1" 200 -
+2025-06-14 23:19:19,249 INFO: 127.0.0.1 - - [14/Jun/2025 23:19:19] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+2025-06-14 23:19:19,670 INFO: 127.0.0.1 - - [14/Jun/2025 23:19:19] "GET / HTTP/1.1" 200 -
+2025-06-14 23:19:20,772 INFO: 127.0.0.1 - - [14/Jun/2025 23:19:20] "GET /daily-routine HTTP/1.1" 200 -

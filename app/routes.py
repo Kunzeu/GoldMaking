@@ -570,11 +570,28 @@ def farms():
 def about():
     return render_template('about.html')
 
-@main_bp.route('/daily-routine')
+@main_bp.route('/daily-routine', methods=['GET', 'POST'])
 def daily_routine():
-    farmeos = Farm.query.all()
+    from .models import DailyRoutine
+    if request.method == 'POST':
+        if not current_user.is_authenticated or current_user.role != 'admin':
+            flash('No tienes permisos para modificar la rutina diaria.', 'error')
+            return redirect(url_for('main.daily_routine'))
+        # Borrar rutina anterior
+        DailyRoutine.query.delete()
+        db.session.commit()
+        # Guardar nueva rutina
+        farm_ids = request.form.getlist('farm_ids')
+        for orden, farm_id in enumerate(farm_ids):
+            dr = DailyRoutine(farm_id=int(farm_id), orden=orden)
+            db.session.add(dr)
+        db.session.commit()
+        flash("Rutina diaria actualizada correctamente.", "success")
+        return redirect(url_for('main.daily_routine'))
+    # GET: mostrar rutina diaria guardada
+    rutina = db.session.query(DailyRoutine, Farm).join(Farm, DailyRoutine.farm_id == Farm.id).order_by(DailyRoutine.orden.asc()).all()
     farmeos_formateados = []
-    for farm in farmeos:
+    for dr, farm in rutina:
         ganancia = farm.ganancia if farm.ganancia is not None else 0
         duracion = farm.duracion if farm.duracion else "-"
         farmeos_formateados.append({
@@ -583,18 +600,8 @@ def daily_routine():
             "ganancia_formateada": format_gsc(ganancia),
             "duracion": duracion
         })
-    return render_template('daily_routine.html', farmeos=farmeos_formateados)
-
-@main_bp.route('/set-daily-routine', methods=['POST'])
-def set_daily_routine():
-    # Borrar rutina anterior
-    DailyRoutine.query.delete()
-    db.session.commit()
-    # Guardar nueva rutina
-    farm_ids = request.form.getlist('farm_ids')
-    for orden, farm_id in enumerate(farm_ids):
-        dr = DailyRoutine(farm_id=int(farm_id), orden=orden)
-        db.session.add(dr)
-    db.session.commit()
-    flash("Rutina diaria actualizada correctamente.", "success")
-    return redirect(url_for('main.daily_routine'))
+    # Si es admin, pasar todos los farmeos para el formulario
+    farmeos = None
+    if current_user.is_authenticated and current_user.role == 'admin':
+        farmeos = Farm.query.all()
+    return render_template('daily_routine.html', farmeos_rutina=farmeos_formateados, farmeos=farmeos)

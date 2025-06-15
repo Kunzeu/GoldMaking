@@ -23,6 +23,7 @@
                 {% if current_user.is_authenticated and current_user.role in ['admin', 'editor'] %}
                     <a href="{{ url_for('main.add_farm') }}" class="bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1 rounded-lg shadow font-semibold transition-all duration-200">+ Añadir Farmeo</a>
                 {% endif %}
+                <a href="{{ url_for('main.daily_routine') }}" class="flex items-center gap-3 px-4 py-2 hover:bg-indigo-800 rounded transition-all">Daily Routine</a>
             </div>
         </div>
         <div class="flex items-center space-x-4">
