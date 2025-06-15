@@ -1278,3 +1278,186 @@ werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.s
 2025-06-14 23:19:19,249 INFO: 127.0.0.1 - - [14/Jun/2025 23:19:19] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
 2025-06-14 23:19:19,670 INFO: 127.0.0.1 - - [14/Jun/2025 23:19:19] "GET / HTTP/1.1" 200 -
 2025-06-14 23:19:20,772 INFO: 127.0.0.1 - - [14/Jun/2025 23:19:20] "GET /daily-routine HTTP/1.1" 200 -
+2025-06-14 23:31:21,867 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 23:31:21,867 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 23:31:28,674 INFO: 127.0.0.1 - - [14/Jun/2025 23:31:28] "GET / HTTP/1.1" 200 -
+2025-06-14 23:31:28,945 INFO: 127.0.0.1 - - [14/Jun/2025 23:31:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-14 23:31:30,508 INFO: 127.0.0.1 - - [14/Jun/2025 23:31:30] "GET /farms HTTP/1.1" 200 -
+2025-06-14 23:31:35,272 INFO: 127.0.0.1 - - [14/Jun/2025 23:31:35] "GET /auth/login HTTP/1.1" 200 -
+2025-06-14 23:31:37,495 ERROR: Exception on /auth/login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 15, in login
+    if user and user.check_password(password):
+                ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'check_password'
+2025-06-14 23:31:37,829 INFO: 127.0.0.1 - - [14/Jun/2025 23:31:37] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -
+2025-06-14 23:31:39,971 INFO: 127.0.0.1 - - [14/Jun/2025 23:31:39] "GET / HTTP/1.1" 200 -
+2025-06-14 23:31:41,420 INFO: 127.0.0.1 - - [14/Jun/2025 23:31:41] "GET /auth/login HTTP/1.1" 200 -
+2025-06-14 23:31:43,630 ERROR: Exception on /auth/login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\auth.py", line 15, in login
+    if user and user.check_password(password):
+                ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'check_password'
+2025-06-14 23:31:43,949 INFO: 127.0.0.1 - - [14/Jun/2025 23:31:43] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -
+2025-06-14 23:31:45,226 INFO: 127.0.0.1 - - [14/Jun/2025 23:31:45] "GET / HTTP/1.1" 200 -
+2025-06-14 23:33:18,049 INFO: 127.0.0.1 - - [14/Jun/2025 23:33:18] "GET /register HTTP/1.1" 200 -
+2025-06-14 23:33:28,737 ERROR: Exception on /register [POST]
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'password_hash' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\app\routes.py", line 405, in register
+    db.session.commit()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 599, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4480, in _flush
+    with util.safe_reraise():
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Kunzeu\Desktop\Gold Making\venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1048, "Column 'password_hash' cannot be null")
+[SQL: INSERT INTO user (username, password_hash, `role`) VALUES (%(username)s, %(password_hash)s, %(role)s)]
+[parameters: {'username': 'admin1', 'password_hash': None, 'role': 'user'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-06-14 23:33:29,087 INFO: 127.0.0.1 - - [14/Jun/2025 23:33:29] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-06-14 23:33:30,779 INFO: 127.0.0.1 - - [14/Jun/2025 23:33:30] "GET / HTTP/1.1" 200 -
+2025-06-14 23:34:12,980 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-06-14 23:34:12,980 INFO: [33mPress CTRL+C to quit[0m
+2025-06-14 23:34:18,210 INFO: 127.0.0.1 - - [14/Jun/2025 23:34:18] "GET / HTTP/1.1" 200 -
+2025-06-14 23:34:18,848 INFO: 127.0.0.1 - - [14/Jun/2025 23:34:18] "GET /auth/login HTTP/1.1" 200 -
+2025-06-14 23:34:21,257 INFO: 127.0.0.1 - - [14/Jun/2025 23:34:21] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-06-14 23:34:21,887 INFO: 127.0.0.1 - - [14/Jun/2025 23:34:21] "GET / HTTP/1.1" 200 -
